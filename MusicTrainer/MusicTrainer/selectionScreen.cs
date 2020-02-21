@@ -66,5 +66,30 @@ namespace MusicTrainer
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void perfectPitchButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void noteConstructionButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void scaleIdentificationButton2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

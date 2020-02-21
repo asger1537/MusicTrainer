@@ -52,6 +52,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="scaleIdentificationScreen2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="scaleIdentificationScreen2.Designer.cs">
+      <DependentUpon>scaleIdentificationScreen2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="intervalIdentificationScreen2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="intervalIdentificationScreen2.Designer.cs">
+      <DependentUpon>intervalIdentificationScreen2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="noteReadingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="noteReadingScreen.Designer.cs">
+      <DependentUpon>noteReadingScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="loginScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +92,9 @@
     </Compile>
     <Compile Include="SQLite.cs" />
     <Compile Include="SQLiteAsync.cs" />
+    <EmbeddedResource Include="intervalIdentificationScreen2.resx">
+      <DependentUpon>intervalIdentificationScreen2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loginScreen.resx">
       <DependentUpon>loginScreen.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,11 +107,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="scaleIdentificationScreen2.resx">
+      <DependentUpon>scaleIdentificationScreen2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="selectionScreen.resx">
       <DependentUpon>selectionScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUpScreen.resx">
       <DependentUpon>SignUpScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="noteReadingScreen.resx">
+      <DependentUpon>noteReadingScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
