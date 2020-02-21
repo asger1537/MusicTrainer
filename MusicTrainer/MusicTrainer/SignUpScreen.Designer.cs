@@ -28,29 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.signUpUsernameEntry = new System.Windows.Forms.TextBox();
+            this.signUpPasswordEntry = new System.Windows.Forms.MaskedTextBox();
             this.signUpButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.signUpEmailEntry = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // signUpUsernameEntry
             // 
-            this.textBox1.Location = new System.Drawing.Point(541, 390);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 13;
+            this.signUpUsernameEntry.Location = new System.Drawing.Point(513, 391);
+            this.signUpUsernameEntry.Name = "signUpUsernameEntry";
+            this.signUpUsernameEntry.Size = new System.Drawing.Size(161, 20);
+            this.signUpUsernameEntry.TabIndex = 1;
             // 
-            // maskedTextBox1
+            // signUpPasswordEntry
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(541, 430);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBox1.TabIndex = 12;
+            this.signUpPasswordEntry.Location = new System.Drawing.Point(513, 430);
+            this.signUpPasswordEntry.Name = "signUpPasswordEntry";
+            this.signUpPasswordEntry.Size = new System.Drawing.Size(161, 20);
+            this.signUpPasswordEntry.TabIndex = 2;
+            this.signUpPasswordEntry.UseSystemPasswordChar = true;
             // 
             // signUpButton
             // 
@@ -58,9 +59,10 @@
             this.signUpButton.Location = new System.Drawing.Point(550, 456);
             this.signUpButton.Name = "signUpButton";
             this.signUpButton.Size = new System.Drawing.Size(82, 27);
-            this.signUpButton.TabIndex = 11;
+            this.signUpButton.TabIndex = 3;
             this.signUpButton.Text = "Sign up";
             this.signUpButton.UseVisualStyleBackColor = true;
+            this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
             // 
             // label3
             // 
@@ -77,7 +79,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label2.Location = new System.Drawing.Point(461, 429);
+            this.label2.Location = new System.Drawing.Point(433, 429);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 18);
             this.label2.TabIndex = 9;
@@ -87,24 +89,25 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label1.Location = new System.Drawing.Point(455, 389);
+            this.label1.Location = new System.Drawing.Point(427, 390);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 18);
             this.label1.TabIndex = 8;
             this.label1.Text = "Username:";
             // 
-            // textBox2
+            // signUpEmailEntry
             // 
-            this.textBox2.Location = new System.Drawing.Point(541, 353);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 15;
+            this.signUpEmailEntry.Location = new System.Drawing.Point(513, 353);
+            this.signUpEmailEntry.MaxLength = 254;
+            this.signUpEmailEntry.Name = "signUpEmailEntry";
+            this.signUpEmailEntry.Size = new System.Drawing.Size(161, 20);
+            this.signUpEmailEntry.TabIndex = 0;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label4.Location = new System.Drawing.Point(489, 352);
+            this.label4.Location = new System.Drawing.Point(461, 352);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 18);
             this.label4.TabIndex = 14;
@@ -116,10 +119,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 761);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.signUpEmailEntry);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.signUpUsernameEntry);
+            this.Controls.Add(this.signUpPasswordEntry);
             this.Controls.Add(this.signUpButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -132,13 +135,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.TextBox signUpUsernameEntry;
+        private System.Windows.Forms.MaskedTextBox signUpPasswordEntry;
         private System.Windows.Forms.Button signUpButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox signUpEmailEntry;
         private System.Windows.Forms.Label label4;
     }
 }

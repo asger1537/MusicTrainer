@@ -1,57 +1,75 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SQLite;
+using System.Security.Cryptography;
 
 
 namespace MusicTrainer
 {
-    class Program
+    public class Program
     {
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+
+
+        public static Form loginScreen;
+        public static Form signUpScreen;
+        public static Form selectionScreen;
+        public static Program program;
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new loginScreen());
-
-            Program p = new Program();
-            p.connectToDB();
+            initialize();
+            
+            Application.Run(loginScreen);
+        }
+        
+        static void initialize()
+        {
+            loginScreen = new loginScreen();
+            program = new Program();
+            signUpScreen = new SignUpScreen();
+            selectionScreen = new selectionScreen();
+            connectToDB();
         }
 
-        SQLiteConnection db;
-        public void connectToDB()
+
+        public static SQLiteConnection db;
+        static void connectToDB()
         {
-            db = new SQLiteConnection("C:\\Users\\Computer\\source\\repos\\MusicTrainer\\database\\users.db");
-            db.CreateTable<Message>();
+            var fullBasePath = Directory.GetCurrentDirectory();
+            var musicTrainerPath = fullBasePath.Substring(0, fullBasePath.IndexOf("MusicTrainer")+"MusicTrainer".Length);
+
+            db = new SQLiteConnection(musicTrainerPath+"\\database\\users.db");
+            db.CreateTable<User>();
         }
 
-        public int AddMessageToDB(Message cm)
+        static public int AddUserToDB(User user)
         {
-            int result = db.Insert(cm);
+            int result = db.Insert(user);
             return result;
         }
 
-        public List<Message> getAllMessages()
-        {
-            List<Message> messages = db.Table<Message>().ToList();
-            return messages;
-        }
-
         [Table("Users")]
-        public class Message
+        public class User
         {
             [PrimaryKey, AutoIncrement, Column("user_id")]
             public int Id { get; set; }
 
+            public string Email { get; set; }
+
+            public string Username { get; set; }
+
             public string Hashed_pw { get; set; }
 
-            public string Salt { get; set; }
+            public byte[] Salt { get; set; }
 
             public int Score1 { get; set; }
 
@@ -59,6 +77,17 @@ namespace MusicTrainer
 
             public int Score3 { get; set; }
 
+        }
+
+        public static byte[] GetSalt(int maxiumumSaltLength = 128/8)
+        {
+            var salt = new byte[maxiumumSaltLength];
+            using (var random = new RNGCryptoServiceProvider())
+            {
+                random.GetNonZeroBytes(salt);
+            }
+
+            return salt;
         }
 
 
