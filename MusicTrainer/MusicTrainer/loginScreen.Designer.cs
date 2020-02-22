@@ -43,7 +43,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label1.Location = new System.Drawing.Point(439, 319);
+            this.label1.Location = new System.Drawing.Point(423, 313);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 18);
             this.label1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label2.Location = new System.Drawing.Point(445, 359);
+            this.label2.Location = new System.Drawing.Point(429, 353);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 18);
             this.label2.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 47F);
-            this.label3.Location = new System.Drawing.Point(373, 156);
+            this.label3.Location = new System.Drawing.Point(379, 156);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(406, 76);
             this.label3.TabIndex = 2;
@@ -74,7 +74,7 @@
             // loginButton
             // 
             this.loginButton.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.loginButton.Location = new System.Drawing.Point(534, 386);
+            this.loginButton.Location = new System.Drawing.Point(543, 389);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(82, 27);
             this.loginButton.TabIndex = 3;
@@ -84,23 +84,24 @@
             // 
             // loginPasswordEntry
             // 
-            this.loginPasswordEntry.Location = new System.Drawing.Point(525, 360);
+            this.loginPasswordEntry.Location = new System.Drawing.Point(509, 354);
             this.loginPasswordEntry.Name = "loginPasswordEntry";
-            this.loginPasswordEntry.Size = new System.Drawing.Size(100, 20);
+            this.loginPasswordEntry.PasswordChar = '*';
+            this.loginPasswordEntry.Size = new System.Drawing.Size(160, 20);
             this.loginPasswordEntry.TabIndex = 1;
             // 
             // loginUsernameEntry
             // 
-            this.loginUsernameEntry.Location = new System.Drawing.Point(525, 320);
+            this.loginUsernameEntry.Location = new System.Drawing.Point(509, 314);
             this.loginUsernameEntry.Name = "loginUsernameEntry";
-            this.loginUsernameEntry.Size = new System.Drawing.Size(100, 20);
+            this.loginUsernameEntry.Size = new System.Drawing.Size(160, 20);
             this.loginUsernameEntry.TabIndex = 0;
             // 
             // signUpLink
             // 
             this.signUpLink.AutoSize = true;
             this.signUpLink.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.signUpLink.Location = new System.Drawing.Point(546, 446);
+            this.signUpLink.Location = new System.Drawing.Point(560, 444);
             this.signUpLink.Name = "signUpLink";
             this.signUpLink.Size = new System.Drawing.Size(55, 18);
             this.signUpLink.TabIndex = 6;
@@ -112,7 +113,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.label4.Location = new System.Drawing.Point(508, 432);
+            this.label4.Location = new System.Drawing.Point(522, 430);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(138, 14);
             this.label4.TabIndex = 7;
@@ -122,7 +123,7 @@
             // loginErrorMessage
             // 
             this.loginErrorMessage.AutoSize = true;
-            this.loginErrorMessage.Location = new System.Drawing.Point(522, 289);
+            this.loginErrorMessage.Location = new System.Drawing.Point(503, 283);
             this.loginErrorMessage.Name = "loginErrorMessage";
             this.loginErrorMessage.Size = new System.Drawing.Size(0, 13);
             this.loginErrorMessage.TabIndex = 8;

@@ -47,7 +47,7 @@ namespace MusicTrainer
             var fullBasePath = Directory.GetCurrentDirectory();
             var musicTrainerPath = fullBasePath.Substring(0, fullBasePath.IndexOf("MusicTrainer")+"MusicTrainer".Length);
 
-            db = new SQLiteConnection(musicTrainerPath+"\\database\\users.db");
+            db = new SQLiteConnection(musicTrainerPath+"\\MusicTrainer\\database\\users.db");
             db.CreateTable<User>();
         }
 
@@ -60,11 +60,11 @@ namespace MusicTrainer
         [Table("Users")]
         public class User
         {
-            [PrimaryKey, AutoIncrement, Column("user_id")]
+            [PrimaryKey, AutoIncrement]
             public int Id { get; set; }
-
+            [Unique]
             public string Email { get; set; }
-
+            [Unique]
             public string Username { get; set; }
 
             public string Hashed_pw { get; set; }

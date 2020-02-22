@@ -36,20 +36,24 @@
             this.label1 = new System.Windows.Forms.Label();
             this.signUpEmailEntry = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.signUpErrorMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // signUpUsernameEntry
             // 
             this.signUpUsernameEntry.Location = new System.Drawing.Point(513, 391);
+            this.signUpUsernameEntry.MaxLength = 254;
             this.signUpUsernameEntry.Name = "signUpUsernameEntry";
-            this.signUpUsernameEntry.Size = new System.Drawing.Size(161, 20);
+            this.signUpUsernameEntry.Size = new System.Drawing.Size(160, 20);
             this.signUpUsernameEntry.TabIndex = 1;
             // 
             // signUpPasswordEntry
             // 
             this.signUpPasswordEntry.Location = new System.Drawing.Point(513, 430);
             this.signUpPasswordEntry.Name = "signUpPasswordEntry";
-            this.signUpPasswordEntry.Size = new System.Drawing.Size(161, 20);
+            this.signUpPasswordEntry.PasswordChar = '*';
+            this.signUpPasswordEntry.ResetOnPrompt = false;
+            this.signUpPasswordEntry.Size = new System.Drawing.Size(160, 20);
             this.signUpPasswordEntry.TabIndex = 2;
             this.signUpPasswordEntry.UseSystemPasswordChar = true;
             // 
@@ -68,7 +72,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 25F);
-            this.label3.Location = new System.Drawing.Point(457, 284);
+            this.label3.Location = new System.Drawing.Point(457, 266);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(245, 41);
             this.label3.TabIndex = 10;
@@ -100,7 +104,7 @@
             this.signUpEmailEntry.Location = new System.Drawing.Point(513, 353);
             this.signUpEmailEntry.MaxLength = 254;
             this.signUpEmailEntry.Name = "signUpEmailEntry";
-            this.signUpEmailEntry.Size = new System.Drawing.Size(161, 20);
+            this.signUpEmailEntry.Size = new System.Drawing.Size(160, 20);
             this.signUpEmailEntry.TabIndex = 0;
             // 
             // label4
@@ -114,11 +118,21 @@
             this.label4.Text = "Email:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
+            // signUpErrorMessage
+            // 
+            this.signUpErrorMessage.AutoSize = true;
+            this.signUpErrorMessage.ForeColor = System.Drawing.Color.Red;
+            this.signUpErrorMessage.Location = new System.Drawing.Point(507, 319);
+            this.signUpErrorMessage.Name = "signUpErrorMessage";
+            this.signUpErrorMessage.Size = new System.Drawing.Size(0, 13);
+            this.signUpErrorMessage.TabIndex = 15;
+            // 
             // SignUpScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 761);
+            this.Controls.Add(this.signUpErrorMessage);
             this.Controls.Add(this.signUpEmailEntry);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.signUpUsernameEntry);
@@ -143,5 +157,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox signUpEmailEntry;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label signUpErrorMessage;
     }
 }
