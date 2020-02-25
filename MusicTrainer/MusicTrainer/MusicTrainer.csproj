@@ -52,23 +52,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="scaleIdentificationScreen2.cs">
+    <Compile Include="keySignatureIdentificationScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="scaleIdentificationScreen2.Designer.cs">
-      <DependentUpon>scaleIdentificationScreen2.cs</DependentUpon>
+    <Compile Include="keySignatureIdentificationScreen.Designer.cs">
+      <DependentUpon>keySignatureIdentificationScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="intervalIdentificationScreen2.cs">
+    <Compile Include="perfectPitchScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="intervalIdentificationScreen2.Designer.cs">
-      <DependentUpon>intervalIdentificationScreen2.cs</DependentUpon>
+    <Compile Include="perfectPitchScreen.Designer.cs">
+      <DependentUpon>perfectPitchScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="noteReadingScreen.cs">
+    <Compile Include="keySignatureConstructionScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="noteReadingScreen.Designer.cs">
-      <DependentUpon>noteReadingScreen.cs</DependentUpon>
+    <Compile Include="keySignatureConstructionScreen.Designer.cs">
+      <DependentUpon>keySignatureConstructionScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="loginScreen.cs">
       <SubType>Form</SubType>
@@ -92,8 +92,8 @@
     </Compile>
     <Compile Include="SQLite.cs" />
     <Compile Include="SQLiteAsync.cs" />
-    <EmbeddedResource Include="intervalIdentificationScreen2.resx">
-      <DependentUpon>intervalIdentificationScreen2.cs</DependentUpon>
+    <EmbeddedResource Include="perfectPitchScreen.resx">
+      <DependentUpon>perfectPitchScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="loginScreen.resx">
       <DependentUpon>loginScreen.cs</DependentUpon>
@@ -107,8 +107,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="scaleIdentificationScreen2.resx">
-      <DependentUpon>scaleIdentificationScreen2.cs</DependentUpon>
+    <EmbeddedResource Include="keySignatureIdentificationScreen.resx">
+      <DependentUpon>keySignatureIdentificationScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="selectionScreen.resx">
       <DependentUpon>selectionScreen.cs</DependentUpon>
@@ -116,8 +116,8 @@
     <EmbeddedResource Include="SignUpScreen.resx">
       <DependentUpon>SignUpScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="noteReadingScreen.resx">
-      <DependentUpon>noteReadingScreen.cs</DependentUpon>
+    <EmbeddedResource Include="keySignatureConstructionScreen.resx">
+      <DependentUpon>keySignatureConstructionScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

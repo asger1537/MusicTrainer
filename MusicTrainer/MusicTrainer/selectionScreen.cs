@@ -86,10 +86,11 @@ namespace MusicTrainer
         {
 
         }
-
-        private void scaleIdentificationButton2_Click(object sender, EventArgs e)
+        //read keySignatureIdentificationButton_Click
+        private void ScaleIdentificationButton2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Program.keySignatureIdentificationScreen.Show();
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MusicTrainer
 {
-    public partial class scaleIdentificationScreen2 : Form
+    public partial class perfectPitchScreen : Form
     {
-        public scaleIdentificationScreen2()
+        public perfectPitchScreen()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace MusicTrainer
 {
-    partial class noteReadingScreen
+    partial class keySignatureConstructionScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // noteReadingScreen
+            // keySignatureConstructionScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "noteReadingScreen";
-            this.Text = "noteReadingScreen";
+            this.ClientSize = new System.Drawing.Size(1580, 937);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "keySignatureConstructionScreen";
+            this.Text = "keySignatureConstructionScreen";
             this.ResumeLayout(false);
 
         }

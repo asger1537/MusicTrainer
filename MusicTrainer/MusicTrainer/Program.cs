@@ -20,6 +20,9 @@ namespace MusicTrainer
         public static Form loginScreen;
         public static Form signUpScreen;
         public static Form selectionScreen;
+        public static Form keySignatureIdentificationScreen;
+        public static Form keySignatureConstructionScreen;
+        public static Form perfectPitchScreen;
         public static Program program;
         [STAThread]
         static void Main()

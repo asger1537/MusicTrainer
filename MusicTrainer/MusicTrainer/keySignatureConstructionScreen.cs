@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace MusicTrainer
 {
-    public partial class noteReadingScreen : Form
+    public partial class keySignatureConstructionScreen : Form
     {
-        public noteReadingScreen()
+        public keySignatureConstructionScreen()
         {
             InitializeComponent();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
