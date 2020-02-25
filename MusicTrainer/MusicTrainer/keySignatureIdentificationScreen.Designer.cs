@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -42,30 +40,10 @@
             this.answerKeySignatureAButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(868, 319);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(132, 61);
-            this.button5.TabIndex = 37;
-            this.button5.Text = "Reference Note";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(868, 222);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(132, 61);
-            this.button4.TabIndex = 36;
-            this.button4.Text = "Question Note";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(868, 96);
+            this.button3.Location = new System.Drawing.Point(844, 103);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(175, 61);
             this.button3.TabIndex = 35;
@@ -95,7 +73,7 @@
             // answerKeySignatureGButton
             // 
             this.answerKeySignatureGButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureGButton.Location = new System.Drawing.Point(1064, 566);
+            this.answerKeySignatureGButton.Location = new System.Drawing.Point(1336, 632);
             this.answerKeySignatureGButton.Name = "answerKeySignatureGButton";
             this.answerKeySignatureGButton.Size = new System.Drawing.Size(76, 69);
             this.answerKeySignatureGButton.TabIndex = 32;
@@ -105,7 +83,7 @@
             // answerKeySignatureFButton
             // 
             this.answerKeySignatureFButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureFButton.Location = new System.Drawing.Point(982, 566);
+            this.answerKeySignatureFButton.Location = new System.Drawing.Point(1254, 632);
             this.answerKeySignatureFButton.Name = "answerKeySignatureFButton";
             this.answerKeySignatureFButton.Size = new System.Drawing.Size(76, 69);
             this.answerKeySignatureFButton.TabIndex = 31;
@@ -115,7 +93,7 @@
             // answerKeySignatureEButton
             // 
             this.answerKeySignatureEButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureEButton.Location = new System.Drawing.Point(900, 566);
+            this.answerKeySignatureEButton.Location = new System.Drawing.Point(1172, 632);
             this.answerKeySignatureEButton.Name = "answerKeySignatureEButton";
             this.answerKeySignatureEButton.Size = new System.Drawing.Size(76, 69);
             this.answerKeySignatureEButton.TabIndex = 30;
@@ -125,7 +103,7 @@
             // answerKeySignatureDButton
             // 
             this.answerKeySignatureDButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureDButton.Location = new System.Drawing.Point(818, 566);
+            this.answerKeySignatureDButton.Location = new System.Drawing.Point(1090, 632);
             this.answerKeySignatureDButton.Name = "answerKeySignatureDButton";
             this.answerKeySignatureDButton.Size = new System.Drawing.Size(76, 69);
             this.answerKeySignatureDButton.TabIndex = 29;
@@ -135,7 +113,7 @@
             // answerKeySignatureCButton
             // 
             this.answerKeySignatureCButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureCButton.Location = new System.Drawing.Point(736, 566);
+            this.answerKeySignatureCButton.Location = new System.Drawing.Point(1008, 632);
             this.answerKeySignatureCButton.Name = "answerKeySignatureCButton";
             this.answerKeySignatureCButton.Size = new System.Drawing.Size(76, 69);
             this.answerKeySignatureCButton.TabIndex = 28;
@@ -145,7 +123,7 @@
             // answerKeySignatureBButton
             // 
             this.answerKeySignatureBButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureBButton.Location = new System.Drawing.Point(654, 566);
+            this.answerKeySignatureBButton.Location = new System.Drawing.Point(926, 632);
             this.answerKeySignatureBButton.Name = "answerKeySignatureBButton";
             this.answerKeySignatureBButton.Size = new System.Drawing.Size(76, 69);
             this.answerKeySignatureBButton.TabIndex = 27;
@@ -155,7 +133,7 @@
             // answerKeySignatureAButton
             // 
             this.answerKeySignatureAButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureAButton.Location = new System.Drawing.Point(572, 566);
+            this.answerKeySignatureAButton.Location = new System.Drawing.Point(844, 632);
             this.answerKeySignatureAButton.Name = "answerKeySignatureAButton";
             this.answerKeySignatureAButton.Size = new System.Drawing.Size(76, 69);
             this.answerKeySignatureAButton.TabIndex = 26;
@@ -167,8 +145,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1580, 937);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -187,9 +163,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;

@@ -193,6 +193,7 @@
             this.keySignatureConstructionButton.TabIndex = 22;
             this.keySignatureConstructionButton.Text = "Key Signature Construction";
             this.keySignatureConstructionButton.UseVisualStyleBackColor = true;
+            this.keySignatureConstructionButton.Click += new System.EventHandler(this.keySignatureConstructionButton_Click);
             // 
             // selectionScreen
             // 

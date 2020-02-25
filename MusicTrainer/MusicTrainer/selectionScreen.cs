@@ -79,7 +79,8 @@ namespace MusicTrainer
 
         private void perfectPitchButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Program.perfectPitchScreen.Show();
         }
 
         private void noteConstructionButton_Click(object sender, EventArgs e)
@@ -91,6 +92,12 @@ namespace MusicTrainer
         {
             this.Hide();
             Program.keySignatureIdentificationScreen.Show();
+        }
+
+        private void keySignatureConstructionButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.keySignatureConstructionScreen.Show();
         }
     }
 }
