@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SQLite;
 using System.Security.Cryptography;
+using System.Media;
 
 
 namespace MusicTrainer
@@ -24,14 +25,17 @@ namespace MusicTrainer
         public static Form keySignatureConstructionScreen;
         public static Form perfectPitchScreen;
         public static Program program;
+        public static Dictionary<string, SoundPlayer> tonePlayers;
+
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             initialize();
-            
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
             Application.Run(loginScreen);
+
         }
         
         static void initialize()
@@ -40,17 +44,41 @@ namespace MusicTrainer
             program = new Program();
             signUpScreen = new SignUpScreen();
             selectionScreen = new selectionScreen();
+            perfectPitchScreen = new perfectPitchScreen();
+            keySignatureConstructionScreen = new keySignatureConstructionScreen();
+            keySignatureIdentificationScreen = new keySignatureIdentificationScreen();
+
+
+            tonePlayers = new Dictionary<string, SoundPlayer>();
+            string noteSoundsPath = getMusicTrainerPath() + "\\MusicTrainer\\noteSounds\\";
+            tonePlayers.Add("C3", new SoundPlayer(noteSoundsPath + "C3.wav"));
+            tonePlayers.Add("D3", new SoundPlayer(noteSoundsPath + "D3.wav"));
+            tonePlayers.Add("E3", new SoundPlayer(noteSoundsPath + "E3.wav"));
+            tonePlayers.Add("F3", new SoundPlayer(noteSoundsPath + "F3.wav"));
+            tonePlayers.Add("G3", new SoundPlayer(noteSoundsPath + "G3.wav"));
+            tonePlayers.Add("A3", new SoundPlayer(noteSoundsPath + "A3.wav"));
+            tonePlayers.Add("B3", new SoundPlayer(noteSoundsPath + "B3.wav"));
+            
+            //SoundPlayer s = new SoundPlayer(@"C:\Users\Bruger\Documents\GitHub\MusicTrainer\MusicTrainer\noteSounds\C3.wav");
+            //s.Play();
+
+
             connectToDB();
         }
 
+        static string getMusicTrainerPath()
+        {
+            var fullBasePath = Directory.GetCurrentDirectory();
+            var musicTrainerPath = fullBasePath.Substring(0, fullBasePath.IndexOf("MusicTrainer") + "MusicTrainer".Length);
+            return musicTrainerPath;
+        }
 
         public static SQLiteConnection db;
         static void connectToDB()
         {
-            var fullBasePath = Directory.GetCurrentDirectory();
-            var musicTrainerPath = fullBasePath.Substring(0, fullBasePath.IndexOf("MusicTrainer")+"MusicTrainer".Length);
+            
 
-            db = new SQLiteConnection(musicTrainerPath+"\\MusicTrainer\\database\\users.db");
+            db = new SQLiteConnection(getMusicTrainerPath()+"\\MusicTrainer\\database\\users.db");
             db.CreateTable<User>();
         }
 

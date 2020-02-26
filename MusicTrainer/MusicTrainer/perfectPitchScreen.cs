@@ -12,9 +12,20 @@ namespace MusicTrainer
 {
     public partial class perfectPitchScreen : Form
     {
+        string currentNote;
+
         public perfectPitchScreen()
         {
             InitializeComponent();
+            currentNote = getRandomNote();
+        }
+
+        string getRandomNote()
+        {
+
+            List<string> notes = new List<string>() { "C", "D", "E", "F", "G", "A", "B" };
+
+            return notes[new Random().Next(notes.Count)];
         }
 
         private void perfectPitchScreen_Load(object sender, EventArgs e)
@@ -35,6 +46,16 @@ namespace MusicTrainer
         private void button3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HearAgain_Click(object sender, EventArgs e)
+        {
+            Program.tonePlayers[currentNote].Play();
         }
     }
 }
