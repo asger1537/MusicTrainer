@@ -31,5 +31,10 @@ namespace MusicTrainer
         {
 
         }
+
+        private void keySignatureIdentificationScreen_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
