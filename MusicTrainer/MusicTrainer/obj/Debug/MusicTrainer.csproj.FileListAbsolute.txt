@@ -572,3 +572,6 @@ C:\Users\oska0\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug
 C:\Users\oska0\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.csproj.CopyComplete
 C:\Users\oska0\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.exe
 C:\Users\oska0\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.pdb
+C:\Users\oska0\Google Drev\Programmering\VS Code\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.perfectPitchScreen.resources
+C:\Users\oska0\Google Drev\Programmering\VS Code\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.keySignatureIdentificationScreen.resources
+C:\Users\oska0\Google Drev\Programmering\VS Code\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.keySignatureConstructionScreen.resources
