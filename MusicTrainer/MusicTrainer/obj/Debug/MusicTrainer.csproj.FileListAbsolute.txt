@@ -444,13 +444,10 @@ C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\bin\De
 C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\bin\Debug\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
 C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.csprojAssemblyReference.cache
 C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.exe.config
-C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.intervalIdentificationScreen2.resources
 C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.loginScreen.resources
 C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.Properties.Resources.resources
-C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.scaleIdentificationScreen2.resources
 C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.selectionScreen.resources
 C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.SignUpScreen.resources
-C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.noteReadingScreen.resources
 C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.csproj.GenerateResource.cache
 C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.csproj.CoreCompileInputs.cache
 C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.csproj.CopyComplete
@@ -689,3 +686,7 @@ C:\Users\Bruger\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debu
 C:\Users\Bruger\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.csproj.CopyComplete
 C:\Users\Bruger\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.exe
 C:\Users\Bruger\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.pdb
+C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.perfectPitchScreen.resources
+C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.keySignatureIdentificationScreen.resources
+C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.keySignatureConstructionScreen.resources
+C:\Users\Computer\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\bin\Debug\AxInterop.WMPLib.dll

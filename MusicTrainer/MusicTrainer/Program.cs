@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using SQLite;
 using System.Security.Cryptography;
 using System.Media;
+using WMPLib;
 
 
 namespace MusicTrainer
@@ -18,14 +19,18 @@ namespace MusicTrainer
         /// </summary>
 
 
-        public static Form loginScreen;
-        public static Form signUpScreen;
-        public static Form selectionScreen;
-        public static Form keySignatureIdentificationScreen;
-        public static Form keySignatureConstructionScreen;
-        public static Form perfectPitchScreen;
+        public static loginScreen loginScreen;
+        public static SignUpScreen signUpScreen;
+        public static selectionScreen selectionScreen;
+        public static keySignatureIdentificationScreen keySignatureIdentificationScreen;
+        public static keySignatureConstructionScreen keySignatureConstructionScreen;
+        public static perfectPitchScreen perfectPitchScreen;
+        public static List<string> notes = new List<string>() { "C3", "D3", "E3", "F3", "G3", "A3", "B3" };
+        public static WindowsMediaPlayer notePlayer;
         public static Program program;
-        public static Dictionary<string, SoundPlayer> tonePlayers;
+        //public static Dictionary<string, WindowsMediaPlayer> notePlayers;
+        
+        
 
         [STAThread]
         static void Main()
@@ -33,7 +38,6 @@ namespace MusicTrainer
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             initialize();
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
             Application.Run(loginScreen);
 
         }
@@ -47,23 +51,14 @@ namespace MusicTrainer
             perfectPitchScreen = new perfectPitchScreen();
             keySignatureConstructionScreen = new keySignatureConstructionScreen();
             keySignatureIdentificationScreen = new keySignatureIdentificationScreen();
-
-
-            tonePlayers = new Dictionary<string, SoundPlayer>();
-            string noteSoundsPath = getMusicTrainerPath() + "\\MusicTrainer\\noteSounds\\";
-            tonePlayers.Add("C3", new SoundPlayer(noteSoundsPath + "C3.wav"));
-            tonePlayers.Add("D3", new SoundPlayer(noteSoundsPath + "D3.wav"));
-            tonePlayers.Add("E3", new SoundPlayer(noteSoundsPath + "E3.wav"));
-            tonePlayers.Add("F3", new SoundPlayer(noteSoundsPath + "F3.wav"));
-            tonePlayers.Add("G3", new SoundPlayer(noteSoundsPath + "G3.wav"));
-            tonePlayers.Add("A3", new SoundPlayer(noteSoundsPath + "A3.wav"));
-            tonePlayers.Add("B3", new SoundPlayer(noteSoundsPath + "B3.wav"));
-            
-            //SoundPlayer s = new SoundPlayer(@"C:\Users\Bruger\Documents\GitHub\MusicTrainer\MusicTrainer\noteSounds\C3.wav");
-            //s.Play();
-
-
+            notePlayer = new WindowsMediaPlayer();
             connectToDB();
+        }
+
+        public static string getNoteFile(string note)
+        {
+            string noteSoundsPath = getMusicTrainerPath() + "\\MusicTrainer\\noteSounds\\";
+            return noteSoundsPath + note + ".wav";
         }
 
         static string getMusicTrainerPath()
@@ -76,8 +71,6 @@ namespace MusicTrainer
         public static SQLiteConnection db;
         static void connectToDB()
         {
-            
-
             db = new SQLiteConnection(getMusicTrainerPath()+"\\MusicTrainer\\database\\users.db");
             db.CreateTable<User>();
         }
