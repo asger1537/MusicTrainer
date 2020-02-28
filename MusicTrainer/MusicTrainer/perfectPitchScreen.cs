@@ -13,9 +13,8 @@ namespace MusicTrainer
     public partial class perfectPitchScreen : Form
     {
         string currentNote;
-        int numCorrect;
-        int numCorrectInCurrentLevel;
-        int numQuestionsAnswered;
+        int numCorrect, numCorrectInCurrentLevel;
+        int numQuestionsAnswered, numQuestionsAnsweredInCurrentLevel;
         bool hasAnswered;
         int level;
 
@@ -27,12 +26,12 @@ namespace MusicTrainer
         public void initializePerfectpitch()
         {
             hasAnswered = false;
-            numCorrect = numCorrectInCurrentLevel = numQuestionsAnswered = 0;
+            numCorrect = numCorrectInCurrentLevel = numQuestionsAnswered = numQuestionsAnsweredInCurrentLevel = 0;
             level = getLevel();
             levelLabel.Text = String.Format("Level: {0}", level);
             Console.WriteLine(level);
             currentNote = getRandomNote();
-            updateNotePlayer(currentNote);
+            UpdateNotePlayer(currentNote);
         }
 
         int getLevel()
@@ -63,18 +62,18 @@ namespace MusicTrainer
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BackButton_Click(object sender, EventArgs e)
         {
             this.Hide();
             Program.selectionScreen.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void ContinueButton_Click(object sender, EventArgs e)
         {
             if (hasAnswered)
             {
                 currentNote = getRandomNote();
-                updateNotePlayer(currentNote);
+                UpdateNotePlayer(currentNote);
                 Program.notePlayer.controls.play();
                 correctLabel.Text = "";
                 hasAnswered = false;
@@ -86,7 +85,7 @@ namespace MusicTrainer
             Program.notePlayer.controls.play();
         }
 
-        void checkAnswer(string answer)
+        void CheckAnswer(string answer)
         {
             hasAnswered = true;
 
@@ -97,58 +96,64 @@ namespace MusicTrainer
             }
 
             numQuestionsAnswered++;
+            numQuestionsAnsweredInCurrentLevel++;
 
             correctFraction.Text = String.Format("Correct: {0}/{1}", numCorrect, numQuestionsAnswered);
             correctLabel.Text = String.Format("The correct note was: {0}", currentNote);
 
-            if (numCorrectInCurrentLevel > 10 && (float)numCorrectInCurrentLevel/numQuestionsAnswered > 0.7)
+            if (numCorrectInCurrentLevel > 10 && (float)numCorrectInCurrentLevel/numQuestionsAnsweredInCurrentLevel > 0.7)
             {
-                level++;
-                numCorrectInCurrentLevel = 0;
-                updateDatabaseLevel(level);
-                levelLabel.Text = String.Format("Level: {0}", level);
-                Console.WriteLine(getLevel());
+                LevelUp();
             }
         }
 
-        void updateNotePlayer(string note)
+        void LevelUp()
+        {
+            level++;
+            numCorrectInCurrentLevel = 0;
+            numQuestionsAnsweredInCurrentLevel = 0;
+            updateDatabaseLevel(level);
+            levelLabel.Text = String.Format("Level: {0}", level);
+        }
+
+        void UpdateNotePlayer(string note)
         {
             Program.notePlayer.URL = Program.getNoteFile(note);
         }
 
-        private void answerKeySignatureAButton_Click(object sender, EventArgs e)
+        private void AnswerAButton_Click(object sender, EventArgs e)
         {
-            if (!hasAnswered) checkAnswer("A3");
+            if (!hasAnswered) CheckAnswer("A3");
         }
 
-        private void answerKeySignatureBButton_Click(object sender, EventArgs e)
+        private void AnswerBButton_Click(object sender, EventArgs e)
         {
-            if (!hasAnswered) checkAnswer("B3");
+            if (!hasAnswered) CheckAnswer("B3");
         }
 
-        private void answerKeySignatureCButton_Click(object sender, EventArgs e)
+        private void AnswerCButton_Click(object sender, EventArgs e)
         {
-            if (!hasAnswered) checkAnswer("C3");
+            if (!hasAnswered) CheckAnswer("C3");
         }
 
-        private void answerKeySignatureDButton_Click(object sender, EventArgs e)
+        private void AnswerDButton_Click(object sender, EventArgs e)
         {
-            if (!hasAnswered) checkAnswer("D3");
+            if (!hasAnswered) CheckAnswer("D3");
         }
 
-        private void answerKeySignatureEButton_Click(object sender, EventArgs e)
+        private void AnswerEButton_Click(object sender, EventArgs e)
         {
-            if (!hasAnswered) checkAnswer("E3");
+            if (!hasAnswered) CheckAnswer("E3");
         }
 
-        private void answerKeySignatureFButton_Click(object sender, EventArgs e)
+        private void AnswerFButton_Click(object sender, EventArgs e)
         {
-            if (!hasAnswered) checkAnswer("F3");
+            if (!hasAnswered) CheckAnswer("F3");
         }
 
-        private void answerKeySignatureGButton_Click(object sender, EventArgs e)
+        private void AnswerGButton_Click(object sender, EventArgs e)
         {
-            if (!hasAnswered) checkAnswer("G3");
+            if (!hasAnswered) CheckAnswer("G3");
         }
     }
 }
