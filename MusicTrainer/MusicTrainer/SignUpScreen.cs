@@ -111,9 +111,9 @@ namespace MusicTrainer
             newUser.Username = username;
             newUser.Hashed_pw = hashed_pw;
             newUser.Salt = salt;
-            newUser.PerfectPitchLevel = 1;
-            newUser.SignatureIdentificationLevel = 1;
-            newUser.SignatureConstructionLevel = 1;
+            newUser.Score1 = 0;
+            newUser.Score2 = 0;
+            newUser.Score3 = 0;
 
             Program.AddUserToDB(newUser);
 

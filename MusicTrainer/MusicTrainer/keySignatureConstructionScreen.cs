@@ -36,5 +36,10 @@ namespace MusicTrainer
         {
 
         }
+
+        private void continueButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

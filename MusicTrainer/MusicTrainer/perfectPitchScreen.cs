@@ -81,9 +81,6 @@ namespace MusicTrainer
             }
         }
 
-        private void HearAgain_Click(object sender, EventArgs e)
-        {
-            Program.notePlayer.controls.play();
         }
 
         void checkAnswer(string answer)
@@ -143,12 +140,7 @@ namespace MusicTrainer
 
         private void answerKeySignatureFButton_Click(object sender, EventArgs e)
         {
-            if (!hasAnswered) checkAnswer("F3");
-        }
 
-        private void answerKeySignatureGButton_Click(object sender, EventArgs e)
-        {
-            if (!hasAnswered) checkAnswer("G3");
         }
     }
 }

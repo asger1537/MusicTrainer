@@ -80,7 +80,7 @@ namespace MusicTrainer
 
             this.Hide();
             Program.selectionScreen.Show();
-            
+        
         }
 
         private void SignUpLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

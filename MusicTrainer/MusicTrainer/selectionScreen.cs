@@ -81,8 +81,6 @@ namespace MusicTrainer
         {
             this.Hide();
             Program.perfectPitchScreen.Show();
-
-            Program.perfectPitchScreen.initializePerfectpitch();
         }
 
         private void noteConstructionButton_Click(object sender, EventArgs e)

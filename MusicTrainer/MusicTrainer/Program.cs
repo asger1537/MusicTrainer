@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SQLite;
 using System.Security.Cryptography;
-using System.Media;
-using WMPLib;
 
 
 namespace MusicTrainer
@@ -38,7 +36,6 @@ namespace MusicTrainer
             notePlayer = new WindowsMediaPlayer();
             ConnectToDB();
             Application.Run(loginScreen);
-
         }
         
         public static string GetNoteFile(string note)
@@ -83,7 +80,7 @@ namespace MusicTrainer
             
             public int PerfectPitchLevel { get; set; }
 
-            public int SignatureIdentificationLevel { get; set; }
+            public int Score2 { get; set; }
 
             public int SignatureConstructionLevel { get; set; }
         }
