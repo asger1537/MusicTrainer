@@ -18,6 +18,8 @@ namespace MusicTrainer
         int numQuestionsAnswered;
         bool hasAnswered;
         int level;
+        int signatureAnswer;
+
         public keySignatureConstructionScreen()
         {
             InitializeComponent();
@@ -45,7 +47,9 @@ namespace MusicTrainer
         string getRandomSignature()
         {
             int numSignatures = Program.signatures.Count;
-            return Program.signatures[new Random().Next(numSignatures)];
+            signatureAnswer = new Random().Next(numSignatures);
+
+            return Program.signatures[signatureAnswer];
         }
         void updateSignature(string signature)
         {
@@ -64,7 +68,7 @@ namespace MusicTrainer
             numQuestionsAnswered++;
 
             correctFraction.Text = String.Format("Correct: {0}/{1}", numCorrect, numQuestionsAnswered);
-            correctLabel.Text = String.Format("The correct note was: {0}", currentSignature);
+            correctLabel.Text = String.Format("The correct image was image nr. {0}", signatureAnswer+1);
 
             if (numCorrectInCurrentLevel > 10 && (float)numCorrectInCurrentLevel / numQuestionsAnswered > 0.7)
             {
@@ -77,22 +81,9 @@ namespace MusicTrainer
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void keySignatureConstructionScreen_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
         {
 
         }
@@ -106,17 +97,18 @@ namespace MusicTrainer
         {
             button1.Hide();
             button3.Show();
-    
+            currentSignature = getRandomSignature();
+            updateSignature(currentSignature);
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (!hasAnswered)
+            if (hasAnswered)
             {
                 currentSignature = getRandomSignature();
                 updateSignature(currentSignature);
-                //correctLabel.Text = "";
+                correctLabel.Text = "";
                 hasAnswered = false;
             }
         }
@@ -155,6 +147,11 @@ namespace MusicTrainer
         private void button8_Click(object sender, EventArgs e)
         {
             if (!hasAnswered) checkAnswer("E_Major");
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if (!hasAnswered) checkAnswer("B_Major");
         }
     }
 }

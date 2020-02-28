@@ -807,3 +807,4 @@ C:\Users\oskar\Source\Repos\asger1537\MusicTrainer\MusicTrainer\MusicTrainer\obj
 C:\Users\oskar\Source\Repos\asger1537\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.csproj.CopyComplete
 C:\Users\oskar\Source\Repos\asger1537\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.exe
 C:\Users\oskar\Source\Repos\asger1537\MusicTrainer\MusicTrainer\MusicTrainer\obj\Debug\MusicTrainer.pdb
+C:\Users\oska0\Documents\GitHub\MusicTrainer\MusicTrainer\MusicTrainer\bin\Debug\AxInterop.WMPLib.dll

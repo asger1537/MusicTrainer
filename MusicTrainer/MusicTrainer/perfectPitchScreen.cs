@@ -71,7 +71,7 @@ namespace MusicTrainer
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (!hasAnswered)
+            if (hasAnswered)
             {
                 currentNote = getRandomNote();
                 updateNotePlayer(currentNote);
