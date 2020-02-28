@@ -14,8 +14,10 @@ namespace MusicTrainer
     {
         string currentNote;
         int numCorrect;
+        int numCorrectInCurrentLevel;
         int numQuestionsAnswered;
         bool hasAnswered;
+        int level;
 
         public perfectPitchScreen()
         {
@@ -25,15 +27,30 @@ namespace MusicTrainer
         public void initializePerfectpitch()
         {
             hasAnswered = false;
-            numCorrect = 0;
-            numQuestionsAnswered = 0;
+            numCorrect = numCorrectInCurrentLevel = numQuestionsAnswered = 0;
+            level = getLevel();
+            levelLabel.Text = String.Format("Level: {0}", level);
+            Console.WriteLine(level);
             currentNote = getRandomNote();
             updateNotePlayer(currentNote);
         }
 
+        int getLevel()
+        {
+            return Program.db.Table<Program.User>().Where(user => user.Id.Equals(Program.userId)).First().PerfectPitchLevel;
+        }
+
+        void updateDatabaseLevel(int lvl)
+        {
+            Program.User user = Program.db.Table<Program.User>().Where(u => u.Id.Equals(Program.userId)).First();
+            user.PerfectPitchLevel = lvl;
+            Program.db.Update(user);
+        }
+
         string getRandomNote()
         {
-            return Program.notes[new Random().Next(Program.notes.Count)];
+            int numNotes = level + 1 > Program.notes.Count ? Program.notes.Count : level + 1;
+            return Program.notes[new Random().Next(numNotes)];
         }
 
         private void perfectPitchScreen_Load(object sender, EventArgs e)
@@ -48,16 +65,20 @@ namespace MusicTrainer
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Program.selectionScreen.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            currentNote = getRandomNote();
-            updateNotePlayer(currentNote);
-            Program.notePlayer.controls.play();
-            correctLabel.Text = "";
-            hasAnswered = false;
+            if (!hasAnswered)
+            {
+                currentNote = getRandomNote();
+                updateNotePlayer(currentNote);
+                Program.notePlayer.controls.play();
+                correctLabel.Text = "";
+                hasAnswered = false;
+            }
         }
 
         private void HearAgain_Click(object sender, EventArgs e)
@@ -72,12 +93,22 @@ namespace MusicTrainer
             if (answer == currentNote)
             {
                 numCorrect++;
+                numCorrectInCurrentLevel++;
             }
 
             numQuestionsAnswered++;
 
             correctFraction.Text = String.Format("Correct: {0}/{1}", numCorrect, numQuestionsAnswered);
             correctLabel.Text = String.Format("The correct note was: {0}", currentNote);
+
+            if (numCorrectInCurrentLevel > 10 && (float)numCorrectInCurrentLevel/numQuestionsAnswered > 0.7)
+            {
+                level++;
+                numCorrectInCurrentLevel = 0;
+                updateDatabaseLevel(level);
+                levelLabel.Text = String.Format("Level: {0}", level);
+                Console.WriteLine(getLevel());
+            }
         }
 
         void updateNotePlayer(string note)

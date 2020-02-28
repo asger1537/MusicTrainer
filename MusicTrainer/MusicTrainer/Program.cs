@@ -28,6 +28,7 @@ namespace MusicTrainer
         public static List<string> notes = new List<string>() { "C3", "D3", "E3", "F3", "G3", "A3", "B3" };
         public static WindowsMediaPlayer notePlayer;
         public static Program program;
+        public static int userId;
         //public static Dictionary<string, WindowsMediaPlayer> notePlayers;
         
         
@@ -95,11 +96,11 @@ namespace MusicTrainer
 
             public byte[] Salt { get; set; }
 
-            public int Score1 { get; set; }
+            public int PerfectPitchLevel { get; set; }
 
-            public int Score2 { get; set; }
+            public int SignatureIdentificationLevel { get; set; }
 
-            public int Score3 { get; set; }
+            public int SignatureConstructionLevel { get; set; }
 
         }
 

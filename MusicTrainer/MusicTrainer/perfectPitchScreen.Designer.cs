@@ -41,12 +41,14 @@ namespace MusicTrainer
             this.hearAgainButton = new System.Windows.Forms.Button();
             this.correctFraction = new System.Windows.Forms.Label();
             this.correctLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.levelLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // continueButton
             // 
-            this.continueButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.continueButton.Location = new System.Drawing.Point(783, 76);
+            this.continueButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.continueButton.Location = new System.Drawing.Point(481, 333);
             this.continueButton.Margin = new System.Windows.Forms.Padding(2);
             this.continueButton.Name = "continueButton";
             this.continueButton.Size = new System.Drawing.Size(131, 50);
@@ -70,7 +72,7 @@ namespace MusicTrainer
             // answerKeySignatureGButton
             // 
             this.answerKeySignatureGButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureGButton.Location = new System.Drawing.Point(727, 462);
+            this.answerKeySignatureGButton.Location = new System.Drawing.Point(699, 460);
             this.answerKeySignatureGButton.Margin = new System.Windows.Forms.Padding(2);
             this.answerKeySignatureGButton.Name = "answerKeySignatureGButton";
             this.answerKeySignatureGButton.Size = new System.Drawing.Size(57, 56);
@@ -82,7 +84,7 @@ namespace MusicTrainer
             // answerKeySignatureFButton
             // 
             this.answerKeySignatureFButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureFButton.Location = new System.Drawing.Point(665, 462);
+            this.answerKeySignatureFButton.Location = new System.Drawing.Point(637, 460);
             this.answerKeySignatureFButton.Margin = new System.Windows.Forms.Padding(2);
             this.answerKeySignatureFButton.Name = "answerKeySignatureFButton";
             this.answerKeySignatureFButton.Size = new System.Drawing.Size(57, 56);
@@ -94,7 +96,7 @@ namespace MusicTrainer
             // answerKeySignatureEButton
             // 
             this.answerKeySignatureEButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureEButton.Location = new System.Drawing.Point(604, 462);
+            this.answerKeySignatureEButton.Location = new System.Drawing.Point(576, 460);
             this.answerKeySignatureEButton.Margin = new System.Windows.Forms.Padding(2);
             this.answerKeySignatureEButton.Name = "answerKeySignatureEButton";
             this.answerKeySignatureEButton.Size = new System.Drawing.Size(57, 56);
@@ -106,7 +108,7 @@ namespace MusicTrainer
             // answerKeySignatureDButton
             // 
             this.answerKeySignatureDButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureDButton.Location = new System.Drawing.Point(543, 462);
+            this.answerKeySignatureDButton.Location = new System.Drawing.Point(515, 460);
             this.answerKeySignatureDButton.Margin = new System.Windows.Forms.Padding(2);
             this.answerKeySignatureDButton.Name = "answerKeySignatureDButton";
             this.answerKeySignatureDButton.Size = new System.Drawing.Size(57, 56);
@@ -118,7 +120,7 @@ namespace MusicTrainer
             // answerKeySignatureCButton
             // 
             this.answerKeySignatureCButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureCButton.Location = new System.Drawing.Point(481, 462);
+            this.answerKeySignatureCButton.Location = new System.Drawing.Point(453, 460);
             this.answerKeySignatureCButton.Margin = new System.Windows.Forms.Padding(2);
             this.answerKeySignatureCButton.Name = "answerKeySignatureCButton";
             this.answerKeySignatureCButton.Size = new System.Drawing.Size(57, 56);
@@ -130,7 +132,7 @@ namespace MusicTrainer
             // answerKeySignatureBButton
             // 
             this.answerKeySignatureBButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureBButton.Location = new System.Drawing.Point(419, 462);
+            this.answerKeySignatureBButton.Location = new System.Drawing.Point(391, 460);
             this.answerKeySignatureBButton.Margin = new System.Windows.Forms.Padding(2);
             this.answerKeySignatureBButton.Name = "answerKeySignatureBButton";
             this.answerKeySignatureBButton.Size = new System.Drawing.Size(57, 56);
@@ -142,7 +144,7 @@ namespace MusicTrainer
             // answerKeySignatureAButton
             // 
             this.answerKeySignatureAButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureAButton.Location = new System.Drawing.Point(358, 462);
+            this.answerKeySignatureAButton.Location = new System.Drawing.Point(330, 460);
             this.answerKeySignatureAButton.Margin = new System.Windows.Forms.Padding(2);
             this.answerKeySignatureAButton.Name = "answerKeySignatureAButton";
             this.answerKeySignatureAButton.Size = new System.Drawing.Size(57, 56);
@@ -153,11 +155,11 @@ namespace MusicTrainer
             // 
             // hearAgainButton
             // 
-            this.hearAgainButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hearAgainButton.Location = new System.Drawing.Point(783, 168);
+            this.hearAgainButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.hearAgainButton.Location = new System.Drawing.Point(481, 387);
             this.hearAgainButton.Margin = new System.Windows.Forms.Padding(2);
             this.hearAgainButton.Name = "hearAgainButton";
-            this.hearAgainButton.Size = new System.Drawing.Size(99, 50);
+            this.hearAgainButton.Size = new System.Drawing.Size(131, 50);
             this.hearAgainButton.TabIndex = 24;
             this.hearAgainButton.Text = "Hear note again";
             this.hearAgainButton.UseVisualStyleBackColor = true;
@@ -166,27 +168,47 @@ namespace MusicTrainer
             // correctFraction
             // 
             this.correctFraction.AutoSize = true;
-            this.correctFraction.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.correctFraction.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
             this.correctFraction.Location = new System.Drawing.Point(475, 29);
             this.correctFraction.Name = "correctFraction";
-            this.correctFraction.Size = new System.Drawing.Size(119, 31);
+            this.correctFraction.Size = new System.Drawing.Size(0, 29);
             this.correctFraction.TabIndex = 26;
-            this.correctFraction.Text = "Correct: ";
             // 
             // correctLabel
             // 
             this.correctLabel.AutoSize = true;
             this.correctLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.correctLabel.Location = new System.Drawing.Point(355, 542);
+            this.correctLabel.Location = new System.Drawing.Point(435, 229);
             this.correctLabel.Name = "correctLabel";
             this.correctLabel.Size = new System.Drawing.Size(0, 25);
             this.correctLabel.TabIndex = 27;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label1.Location = new System.Drawing.Point(447, 300);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(196, 20);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Press the note you heard";
+            // 
+            // levelLabel
+            // 
+            this.levelLabel.AutoSize = true;
+            this.levelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.levelLabel.Location = new System.Drawing.Point(500, 76);
+            this.levelLabel.Name = "levelLabel";
+            this.levelLabel.Size = new System.Drawing.Size(0, 29);
+            this.levelLabel.TabIndex = 29;
             // 
             // perfectPitchScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1185, 761);
+            this.Controls.Add(this.levelLabel);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.correctLabel);
             this.Controls.Add(this.correctFraction);
             this.Controls.Add(this.hearAgainButton);
@@ -221,5 +243,7 @@ namespace MusicTrainer
         private System.Windows.Forms.Button hearAgainButton;
         private System.Windows.Forms.Label correctFraction;
         private System.Windows.Forms.Label correctLabel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label levelLabel;
     }
 }

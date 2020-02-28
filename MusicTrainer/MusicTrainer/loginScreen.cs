@@ -90,13 +90,13 @@ namespace MusicTrainer
                 loginErrorMessage.Text = wrongLoginMessage;
                 return;
             }
-            
-            
+
+            Program.userId = user.Id;
             
 
             this.Hide();
             Program.selectionScreen.Show();
-        
+            
         }
 
         private void signUpLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
