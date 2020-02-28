@@ -1,6 +1,6 @@
 ﻿namespace MusicTrainer
 {
-    partial class keySignatureIdentificationScreen
+    partial class KeySignatureIdentificationScreen
     {
         /// <summary>
         /// Required designer variable.

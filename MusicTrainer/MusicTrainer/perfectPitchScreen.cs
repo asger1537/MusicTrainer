@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace MusicTrainer
 {
-    public partial class perfectPitchScreen : Form
+    public partial class PerfectPitchScreen : Form
     {
         string currentNote;
         int numCorrect;
@@ -19,7 +19,7 @@ namespace MusicTrainer
         bool hasAnswered;
         int level;
 
-        public perfectPitchScreen()
+        public PerfectPitchScreen()
         {
             InitializeComponent();
         }
@@ -37,14 +37,14 @@ namespace MusicTrainer
 
         int getLevel()
         {
-            return Program.db.Table<Program.User>().Where(user => user.Id.Equals(Program.userId)).First().PerfectPitchLevel;
+            return Program.DB.Table<Program.User>().Where(user => user.Id.Equals(Program.userId)).First().PerfectPitchLevel;
         }
 
         void updateDatabaseLevel(int lvl)
         {
-            Program.User user = Program.db.Table<Program.User>().Where(u => u.Id.Equals(Program.userId)).First();
+            Program.User user = Program.DB.Table<Program.User>().Where(u => u.Id.Equals(Program.userId)).First();
             user.PerfectPitchLevel = lvl;
-            Program.db.Update(user);
+            Program.DB.Update(user);
         }
 
         string getRandomNote()
@@ -71,7 +71,7 @@ namespace MusicTrainer
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (!hasAnswered)
+            if (hasAnswered)
             {
                 currentNote = getRandomNote();
                 updateNotePlayer(currentNote);
@@ -113,7 +113,7 @@ namespace MusicTrainer
 
         void updateNotePlayer(string note)
         {
-            Program.notePlayer.URL = Program.getNoteFile(note);
+            Program.notePlayer.URL = Program.GetNoteFile(note);
         }
 
         private void answerKeySignatureAButton_Click(object sender, EventArgs e)

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MusicTrainer
 {
-    public partial class selectionScreen : Form
+    public partial class SelectionScreen : Form
     {
-        public selectionScreen()
+        public SelectionScreen()
         {
             InitializeComponent();
         }

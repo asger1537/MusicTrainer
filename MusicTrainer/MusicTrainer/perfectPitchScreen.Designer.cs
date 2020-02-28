@@ -1,7 +1,7 @@
 ﻿using System;
 namespace MusicTrainer
 {
-    partial class perfectPitchScreen
+    partial class PerfectPitchScreen
     {
         /// <summary>
         /// Required designer variable.

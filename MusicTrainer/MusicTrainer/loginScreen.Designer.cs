@@ -1,6 +1,6 @@
 ﻿namespace MusicTrainer
 {
-    partial class loginScreen
+    partial class LoginScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -48,7 +48,6 @@
             this.label1.Size = new System.Drawing.Size(80, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Username:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -69,7 +68,6 @@
             this.label3.Size = new System.Drawing.Size(406, 76);
             this.label3.TabIndex = 2;
             this.label3.Text = "Music Trainer";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // loginButton
             // 
@@ -80,7 +78,7 @@
             this.loginButton.TabIndex = 3;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = true;
-            this.loginButton.Click += new System.EventHandler(this.button1_Click);
+            this.loginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // loginPasswordEntry
             // 
@@ -107,7 +105,7 @@
             this.signUpLink.TabIndex = 6;
             this.signUpLink.TabStop = true;
             this.signUpLink.Text = "Sign up";
-            this.signUpLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signUpLink_LinkClicked);
+            this.signUpLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.SignUpLink_LinkClicked);
             // 
             // label4
             // 
@@ -118,7 +116,6 @@
             this.label4.Size = new System.Drawing.Size(138, 14);
             this.label4.TabIndex = 7;
             this.label4.Text = "Don\'t have an account?";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // loginErrorMessage
             // 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MusicTrainer
 {
-    public partial class keySignatureConstructionScreen : Form
+    public partial class KeySignatureConstructionScreen : Form
     {
-        public keySignatureConstructionScreen()
+        public KeySignatureConstructionScreen()
         {
             InitializeComponent();
         }

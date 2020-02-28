@@ -37,6 +37,7 @@
             this.signUpEmailEntry = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.signUpErrorMessage = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // signUpUsernameEntry
@@ -66,7 +67,7 @@
             this.signUpButton.TabIndex = 3;
             this.signUpButton.Text = "Sign up";
             this.signUpButton.UseVisualStyleBackColor = true;
-            this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
+            this.signUpButton.Click += new System.EventHandler(this.SignUpButton_Click);
             // 
             // label3
             // 
@@ -127,11 +128,24 @@
             this.signUpErrorMessage.Size = new System.Drawing.Size(0, 13);
             this.signUpErrorMessage.TabIndex = 15;
             // 
-            // SignUpScreen
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(11, 11);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(131, 50);
+            this.button2.TabIndex = 23;
+            this.button2.Text = "Back";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.BackButton_Click);
+            // 
+            // signUpScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1184, 761);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.signUpErrorMessage);
             this.Controls.Add(this.signUpEmailEntry);
             this.Controls.Add(this.label4);
@@ -141,8 +155,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "SignUpScreen";
-            this.Text = "SignUpScreen";
+            this.Name = "signUpScreen";
+            this.Text = "signUpScreen";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,5 +172,6 @@
         private System.Windows.Forms.TextBox signUpEmailEntry;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label signUpErrorMessage;
+        private System.Windows.Forms.Button button2;
     }
 }

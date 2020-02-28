@@ -32,7 +32,7 @@ namespace MusicTrainer
         {
             try
             {
-                return Program.db.Table<Program.User>().Where(user => user.Username.Equals(signUpUsernameEntry.Text)).First();
+                return Program.DB.Table<Program.User>().Where(user => user.Username.Equals(signUpUsernameEntry.Text)).First();
             }
             catch
             {
@@ -44,7 +44,7 @@ namespace MusicTrainer
         {
             try
             {
-                return Program.db.Table<Program.User>().Where(user => user.Email.Equals(signUpEmailEntry.Text)).First();
+                return Program.DB.Table<Program.User>().Where(user => user.Email.Equals(signUpEmailEntry.Text)).First();
             }
             catch
             {
@@ -52,7 +52,7 @@ namespace MusicTrainer
             }
         }
 
-        private void signUpButton_Click(object sender, EventArgs e)
+        bool ValidateEntries()
         {
             bool missingUsername, missingPassword;
             missingUsername = missingPassword = false;
@@ -64,15 +64,23 @@ namespace MusicTrainer
             if (missingUsername && missingPassword) signUpErrorMessage.Text = "Please enter your username and password";
             if (missingUsername && !missingPassword) signUpErrorMessage.Text = "Please enter your username";
             if (!missingUsername && missingPassword) signUpErrorMessage.Text = "Please enter your password";
-            if (missingUsername || missingPassword) return;
+            if (missingUsername || missingPassword) return false;
 
             int minPasswordLength = 8;
             if (signUpPasswordEntry.Text.Length < minPasswordLength)
             {
                 signUpErrorMessage.Text = String.Format("Your password must be at least {0} characters long", minPasswordLength);
-                return;
+                return false;
             }
 
+            return true;
+        }
+
+        private void SignUpButton_Click(object sender, EventArgs e)
+        {
+
+            if (!ValidateEntries()) return;
+            
             //handling already existing username
             Program.User user = getUserByUsername(signUpUsernameEntry.Text);
             if (user != null)
@@ -87,7 +95,6 @@ namespace MusicTrainer
                 signUpErrorMessage.Text = "A user with that email already exists";
                 return;
             }
-
 
             var salt = Program.GetSalt();
             var email = this.signUpEmailEntry.Text;
@@ -110,6 +117,12 @@ namespace MusicTrainer
 
             Program.AddUserToDB(newUser);
 
+            this.Hide();
+            Program.loginScreen.Show();
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
             this.Hide();
             Program.loginScreen.Show();
         }
