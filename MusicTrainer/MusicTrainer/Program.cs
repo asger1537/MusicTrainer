@@ -26,6 +26,7 @@ namespace MusicTrainer
         public static keySignatureConstructionScreen keySignatureConstructionScreen;
         public static perfectPitchScreen perfectPitchScreen;
         public static List<string> notes = new List<string>() { "C3", "D3", "E3", "F3", "G3", "A3", "B3" };
+        public static List<string> signatures = new List<string>() { "C_Major", "D_Major", "E_Major", "F_Major", "G_Major", "A_Major", "B_Major" };
         public static WindowsMediaPlayer notePlayer;
         public static Program program;
         public static int userId;

@@ -39,18 +39,23 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.levelLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.questionSignatureLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(869, 142);
+            this.button3.Location = new System.Drawing.Point(869, 185);
             this.button3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(131, 49);
             this.button3.TabIndex = 38;
             this.button3.Text = "Continue";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Visible = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -62,6 +67,7 @@
             this.button2.TabIndex = 37;
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -73,6 +79,7 @@
             this.button1.TabIndex = 36;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
@@ -83,6 +90,7 @@
             this.button4.Size = new System.Drawing.Size(194, 84);
             this.button4.TabIndex = 39;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -93,6 +101,7 @@
             this.button5.Size = new System.Drawing.Size(194, 82);
             this.button5.TabIndex = 40;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -103,6 +112,7 @@
             this.button6.Size = new System.Drawing.Size(194, 84);
             this.button6.TabIndex = 41;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -113,6 +123,7 @@
             this.button7.Size = new System.Drawing.Size(194, 84);
             this.button7.TabIndex = 42;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -123,6 +134,7 @@
             this.button8.Size = new System.Drawing.Size(194, 82);
             this.button8.TabIndex = 43;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -143,12 +155,44 @@
             this.button10.Size = new System.Drawing.Size(194, 82);
             this.button10.TabIndex = 45;
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // levelLabel
+            // 
+            this.levelLabel.AutoSize = true;
+            this.levelLabel.Location = new System.Drawing.Point(500, 76);
+            this.levelLabel.Name = "levelLabel";
+            this.levelLabel.Size = new System.Drawing.Size(0, 13);
+            this.levelLabel.TabIndex = 46;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label2.Location = new System.Drawing.Point(364, 296);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(412, 20);
+            this.label2.TabIndex = 48;
+            this.label2.Text = "Press the image corresponding to the signature above";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // questionSignatureLabel
+            // 
+            this.questionSignatureLabel.AutoSize = true;
+            this.questionSignatureLabel.Location = new System.Drawing.Point(526, 185);
+            this.questionSignatureLabel.Name = "questionSignatureLabel";
+            this.questionSignatureLabel.Size = new System.Drawing.Size(0, 13);
+            this.questionSignatureLabel.TabIndex = 49;
             // 
             // keySignatureConstructionScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1185, 690);
+            this.Controls.Add(this.questionSignatureLabel);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.levelLabel);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -163,6 +207,7 @@
             this.Text = "keySignatureConstructionScreen";
             this.Load += new System.EventHandler(this.keySignatureConstructionScreen_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -177,5 +222,8 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Label levelLabel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label questionSignatureLabel;
     }
 }

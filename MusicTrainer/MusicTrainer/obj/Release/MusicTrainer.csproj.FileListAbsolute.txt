@@ -110,3 +110,15 @@ C:\Users\oska0\Google Drev\Programmering\VS Code\MusicTrainer\MusicTrainer\Music
 C:\Users\oska0\Google Drev\Programmering\VS Code\MusicTrainer\MusicTrainer\MusicTrainer\obj\Release\MusicTrainer.csproj.CopyComplete
 C:\Users\oska0\Google Drev\Programmering\VS Code\MusicTrainer\MusicTrainer\MusicTrainer\obj\Release\MusicTrainer.exe
 C:\Users\oska0\Google Drev\Programmering\VS Code\MusicTrainer\MusicTrainer\MusicTrainer\obj\Release\MusicTrainer.pdb
+C:\Users\oskar\Source\Repos\asger1537\MusicTrainer\MusicTrainer\MusicTrainer\obj\Release\MusicTrainer.csprojAssemblyReference.cache
+C:\Users\oskar\Source\Repos\asger1537\MusicTrainer\MusicTrainer\MusicTrainer\obj\Release\MusicTrainer.exe.config
+C:\Users\oskar\Source\Repos\asger1537\MusicTrainer\MusicTrainer\MusicTrainer\obj\Release\MusicTrainer.perfectPitchScreen.resources
+C:\Users\oskar\Source\Repos\asger1537\MusicTrainer\MusicTrainer\MusicTrainer\obj\Release\MusicTrainer.loginScreen.resources
+C:\Users\oskar\Source\Repos\asger1537\MusicTrainer\MusicTrainer\MusicTrainer\obj\Release\MusicTrainer.Properties.Resources.resources
+C:\Users\oskar\Source\Repos\asger1537\MusicTrainer\MusicTrainer\MusicTrainer\obj\Release\MusicTrainer.keySignatureIdentificationScreen.resources
+C:\Users\oskar\Source\Repos\asger1537\MusicTrainer\MusicTrainer\MusicTrainer\obj\Release\MusicTrainer.selectionScreen.resources
+C:\Users\oskar\Source\Repos\asger1537\MusicTrainer\MusicTrainer\MusicTrainer\obj\Release\MusicTrainer.SignUpScreen.resources
+C:\Users\oskar\Source\Repos\asger1537\MusicTrainer\MusicTrainer\MusicTrainer\obj\Release\MusicTrainer.keySignatureConstructionScreen.resources
+C:\Users\oskar\Source\Repos\asger1537\MusicTrainer\MusicTrainer\MusicTrainer\obj\Release\MusicTrainer.csproj.GenerateResource.cache
+C:\Users\oskar\Source\Repos\asger1537\MusicTrainer\MusicTrainer\MusicTrainer\obj\Release\MusicTrainer.exe
+C:\Users\oskar\Source\Repos\asger1537\MusicTrainer\MusicTrainer\MusicTrainer\obj\Release\MusicTrainer.pdb
