@@ -24,6 +24,7 @@ namespace MusicTrainer
         {
             InitializeComponent();
         }
+
         public void initializeKeySignatureConstruction()
         {
             hasAnswered = false;
@@ -88,10 +89,6 @@ namespace MusicTrainer
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if (!hasAnswered) checkAnswer("C_Major");
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -152,6 +149,11 @@ namespace MusicTrainer
         private void button9_Click(object sender, EventArgs e)
         {
             if (!hasAnswered) checkAnswer("B_Major");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (!hasAnswered) checkAnswer("C_Major");
         }
     }
 }
