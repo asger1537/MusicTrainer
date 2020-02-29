@@ -216,7 +216,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1580, 849);
+            this.ClientSize = new System.Drawing.Size(1580, 937);
             this.Controls.Add(this.correctLabel);
             this.Controls.Add(this.correctFraction);
             this.Controls.Add(this.questionSignatureLabel);

@@ -63,6 +63,12 @@ namespace MusicTrainer
             return noteSoundsPath + note + ".wav";
         }
 
+        public static string getSignatureFile(string signature)
+        {
+            string imagesPath = getMusicTrainerPath() + "\\MusicTrainer\\images\\";
+            return imagesPath + signature + ".png";
+        }
+
         static string getMusicTrainerPath()
         {
             var fullBasePath = Directory.GetCurrentDirectory();

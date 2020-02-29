@@ -28,160 +28,248 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.correctLabel = new System.Windows.Forms.Label();
+            this.correctFraction = new System.Windows.Forms.Label();
+            this.questionSignatureLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.levelLabel = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.answerKeySignatureGButton = new System.Windows.Forms.Button();
-            this.answerKeySignatureFButton = new System.Windows.Forms.Button();
-            this.answerKeySignatureEButton = new System.Windows.Forms.Button();
-            this.answerKeySignatureDButton = new System.Windows.Forms.Button();
-            this.answerKeySignatureCButton = new System.Windows.Forms.Button();
-            this.answerKeySignatureBButton = new System.Windows.Forms.Button();
-            this.answerKeySignatureAButton = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.questionSignatureImage = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.questionSignatureImage)).BeginInit();
             this.SuspendLayout();
+            // 
+            // correctLabel
+            // 
+            this.correctLabel.AutoSize = true;
+            this.correctLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.correctLabel.Location = new System.Drawing.Point(579, 406);
+            this.correctLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.correctLabel.Name = "correctLabel";
+            this.correctLabel.Size = new System.Drawing.Size(0, 29);
+            this.correctLabel.TabIndex = 66;
+            // 
+            // correctFraction
+            // 
+            this.correctFraction.AutoSize = true;
+            this.correctFraction.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+            this.correctFraction.Location = new System.Drawing.Point(633, 37);
+            this.correctFraction.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.correctFraction.Name = "correctFraction";
+            this.correctFraction.Size = new System.Drawing.Size(0, 35);
+            this.correctFraction.TabIndex = 65;
+            // 
+            // questionSignatureLabel
+            // 
+            this.questionSignatureLabel.AutoSize = true;
+            this.questionSignatureLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.questionSignatureLabel.Location = new System.Drawing.Point(701, 229);
+            this.questionSignatureLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.questionSignatureLabel.Name = "questionSignatureLabel";
+            this.questionSignatureLabel.Size = new System.Drawing.Size(0, 39);
+            this.questionSignatureLabel.TabIndex = 64;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.label2.Location = new System.Drawing.Point(473, 435);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(530, 25);
+            this.label2.TabIndex = 63;
+            this.label2.Text = "Press the signature corresponding to the image above";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // levelLabel
+            // 
+            this.levelLabel.AutoSize = true;
+            this.levelLabel.Location = new System.Drawing.Point(667, 95);
+            this.levelLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.levelLabel.Name = "levelLabel";
+            this.levelLabel.Size = new System.Drawing.Size(0, 17);
+            this.levelLabel.TabIndex = 62;
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(633, 84);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Location = new System.Drawing.Point(1159, 171);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(131, 50);
-            this.button3.TabIndex = 35;
+            this.button3.Size = new System.Drawing.Size(175, 60);
+            this.button3.TabIndex = 54;
             this.button3.Text = "Continue";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Visible = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(9, 10);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Location = new System.Drawing.Point(12, 13);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(131, 50);
-            this.button2.TabIndex = 34;
+            this.button2.Size = new System.Drawing.Size(175, 60);
+            this.button2.TabIndex = 53;
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(9, 144);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(1159, 171);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 50);
-            this.button1.TabIndex = 33;
+            this.button1.Size = new System.Drawing.Size(175, 60);
+            this.button1.TabIndex = 52;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // answerKeySignatureGButton
+            // button4
             // 
-            this.answerKeySignatureGButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureGButton.Location = new System.Drawing.Point(1002, 514);
-            this.answerKeySignatureGButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.answerKeySignatureGButton.Name = "answerKeySignatureGButton";
-            this.answerKeySignatureGButton.Size = new System.Drawing.Size(57, 56);
-            this.answerKeySignatureGButton.TabIndex = 32;
-            this.answerKeySignatureGButton.Text = "G";
-            this.answerKeySignatureGButton.UseVisualStyleBackColor = true;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button4.Location = new System.Drawing.Point(472, 486);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(175, 60);
+            this.button4.TabIndex = 67;
+            this.button4.Text = "C_Major";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // answerKeySignatureFButton
+            // button5
             // 
-            this.answerKeySignatureFButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureFButton.Location = new System.Drawing.Point(940, 514);
-            this.answerKeySignatureFButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.answerKeySignatureFButton.Name = "answerKeySignatureFButton";
-            this.answerKeySignatureFButton.Size = new System.Drawing.Size(57, 56);
-            this.answerKeySignatureFButton.TabIndex = 31;
-            this.answerKeySignatureFButton.Text = "F";
-            this.answerKeySignatureFButton.UseVisualStyleBackColor = true;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button5.Location = new System.Drawing.Point(653, 486);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(175, 60);
+            this.button5.TabIndex = 68;
+            this.button5.Text = "D_Major";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // answerKeySignatureEButton
+            // button6
             // 
-            this.answerKeySignatureEButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureEButton.Location = new System.Drawing.Point(879, 514);
-            this.answerKeySignatureEButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.answerKeySignatureEButton.Name = "answerKeySignatureEButton";
-            this.answerKeySignatureEButton.Size = new System.Drawing.Size(57, 56);
-            this.answerKeySignatureEButton.TabIndex = 30;
-            this.answerKeySignatureEButton.Text = "E";
-            this.answerKeySignatureEButton.UseVisualStyleBackColor = true;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button6.Location = new System.Drawing.Point(834, 486);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(175, 60);
+            this.button6.TabIndex = 69;
+            this.button6.Text = "E_Major";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // answerKeySignatureDButton
+            // button7
             // 
-            this.answerKeySignatureDButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureDButton.Location = new System.Drawing.Point(818, 514);
-            this.answerKeySignatureDButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.answerKeySignatureDButton.Name = "answerKeySignatureDButton";
-            this.answerKeySignatureDButton.Size = new System.Drawing.Size(57, 56);
-            this.answerKeySignatureDButton.TabIndex = 29;
-            this.answerKeySignatureDButton.Text = "D";
-            this.answerKeySignatureDButton.UseVisualStyleBackColor = true;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button7.Location = new System.Drawing.Point(383, 552);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(175, 60);
+            this.button7.TabIndex = 70;
+            this.button7.Text = "F_Major";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // answerKeySignatureCButton
+            // button8
             // 
-            this.answerKeySignatureCButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureCButton.Location = new System.Drawing.Point(756, 514);
-            this.answerKeySignatureCButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.answerKeySignatureCButton.Name = "answerKeySignatureCButton";
-            this.answerKeySignatureCButton.Size = new System.Drawing.Size(57, 56);
-            this.answerKeySignatureCButton.TabIndex = 28;
-            this.answerKeySignatureCButton.Text = "C";
-            this.answerKeySignatureCButton.UseVisualStyleBackColor = true;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button8.Location = new System.Drawing.Point(564, 552);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(175, 60);
+            this.button8.TabIndex = 71;
+            this.button8.Text = "G_Major";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
-            // answerKeySignatureBButton
+            // button9
             // 
-            this.answerKeySignatureBButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureBButton.Location = new System.Drawing.Point(694, 514);
-            this.answerKeySignatureBButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.answerKeySignatureBButton.Name = "answerKeySignatureBButton";
-            this.answerKeySignatureBButton.Size = new System.Drawing.Size(57, 56);
-            this.answerKeySignatureBButton.TabIndex = 27;
-            this.answerKeySignatureBButton.Text = "B";
-            this.answerKeySignatureBButton.UseVisualStyleBackColor = true;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button9.Location = new System.Drawing.Point(745, 552);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(175, 60);
+            this.button9.TabIndex = 72;
+            this.button9.Text = "A_Major";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // answerKeySignatureAButton
+            // button10
             // 
-            this.answerKeySignatureAButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answerKeySignatureAButton.Location = new System.Drawing.Point(633, 514);
-            this.answerKeySignatureAButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.answerKeySignatureAButton.Name = "answerKeySignatureAButton";
-            this.answerKeySignatureAButton.Size = new System.Drawing.Size(57, 56);
-            this.answerKeySignatureAButton.TabIndex = 26;
-            this.answerKeySignatureAButton.Text = "A";
-            this.answerKeySignatureAButton.UseVisualStyleBackColor = true;
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.button10.Location = new System.Drawing.Point(926, 552);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(175, 60);
+            this.button10.TabIndex = 73;
+            this.button10.Text = "B_Major";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // questionSignatureImage
+            // 
+            this.questionSignatureImage.Location = new System.Drawing.Point(604, 271);
+            this.questionSignatureImage.Name = "questionSignatureImage";
+            this.questionSignatureImage.Size = new System.Drawing.Size(259, 103);
+            this.questionSignatureImage.TabIndex = 74;
+            this.questionSignatureImage.TabStop = false;
+            this.questionSignatureImage.Click += new System.EventHandler(this.questionSignatureImage_Click);
             // 
             // keySignatureIdentificationScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(963, 570);
+            this.ClientSize = new System.Drawing.Size(1580, 937);
+            this.Controls.Add(this.questionSignatureImage);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.correctLabel);
+            this.Controls.Add(this.correctFraction);
+            this.Controls.Add(this.questionSignatureLabel);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.levelLabel);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.answerKeySignatureGButton);
-            this.Controls.Add(this.answerKeySignatureFButton);
-            this.Controls.Add(this.answerKeySignatureEButton);
-            this.Controls.Add(this.answerKeySignatureDButton);
-            this.Controls.Add(this.answerKeySignatureCButton);
-            this.Controls.Add(this.answerKeySignatureBButton);
-            this.Controls.Add(this.answerKeySignatureAButton);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "keySignatureIdentificationScreen";
             this.Text = "keySignatureIdentificationScreen";
             this.Load += new System.EventHandler(this.keySignatureIdentificationScreen_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.questionSignatureImage)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label correctLabel;
+        private System.Windows.Forms.Label correctFraction;
+        private System.Windows.Forms.Label questionSignatureLabel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label levelLabel;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button answerKeySignatureGButton;
-        private System.Windows.Forms.Button answerKeySignatureFButton;
-        private System.Windows.Forms.Button answerKeySignatureEButton;
-        private System.Windows.Forms.Button answerKeySignatureDButton;
-        private System.Windows.Forms.Button answerKeySignatureCButton;
-        private System.Windows.Forms.Button answerKeySignatureBButton;
-        private System.Windows.Forms.Button answerKeySignatureAButton;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.PictureBox questionSignatureImage;
     }
 }
