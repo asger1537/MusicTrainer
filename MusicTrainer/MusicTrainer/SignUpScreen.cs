@@ -17,22 +17,12 @@ namespace MusicTrainer
         {
             InitializeComponent();
         }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private Program.User getUserByUsername(string username)
+        
+        private Program.User GetUserByUsername(string username)
         {
             try
             {
-                return Program.db.Table<Program.User>().Where(user => user.Username.Equals(signUpUsernameEntry.Text)).First();
+                return Program.db.Table<Program.User>().Where(user => user.Username.Equals(username)).First();
             }
             catch
             {
@@ -40,11 +30,11 @@ namespace MusicTrainer
             }
         }
 
-        private Program.User getUserByEmail(string username)
+        private Program.User GetUserByEmail(string email)
         {
             try
             {
-                return Program.db.Table<Program.User>().Where(user => user.Email.Equals(signUpEmailEntry.Text)).First();
+                return Program.db.Table<Program.User>().Where(user => user.Email.Equals(email)).First();
             }
             catch
             {
@@ -52,7 +42,7 @@ namespace MusicTrainer
             }
         }
 
-        private void signUpButton_Click(object sender, EventArgs e)
+        private void SignUpButton_Click(object sender, EventArgs e)
         {
             bool missingUsername, missingPassword;
             missingUsername = missingPassword = false;
@@ -74,14 +64,14 @@ namespace MusicTrainer
             }
 
             //handling already existing username
-            Program.User user = getUserByUsername(signUpUsernameEntry.Text);
+            Program.User user = GetUserByUsername(signUpUsernameEntry.Text);
             if (user != null)
             {
                 signUpErrorMessage.Text = "A user with that username already exists";
                 return;
             }
             //already exisiting email adress
-            user = getUserByEmail(signUpEmailEntry.Text);
+            user = GetUserByEmail(signUpEmailEntry.Text);
             if (user != null)
             {
                 signUpErrorMessage.Text = "A user with that email already exists";
@@ -108,7 +98,7 @@ namespace MusicTrainer
             newUser.SignatureIdentificationLevel = 1;
             newUser.SignatureConstructionLevel = 1;
 
-            Program.AddUserToDB(newUser);
+            Program.db.Insert(newUser);
 
             this.Hide();
             Program.loginScreen.Show();

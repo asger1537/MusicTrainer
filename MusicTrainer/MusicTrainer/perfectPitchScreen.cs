@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace MusicTrainer
 {
-    public partial class perfectPitchScreen : Form
+    public partial class PerfectPitchScreen : Form
     {
         string currentNote;
         int numCorrect, numCorrectInCurrentLevel;
@@ -18,7 +18,7 @@ namespace MusicTrainer
         bool hasAnswered;
         int level;
 
-        public perfectPitchScreen()
+        public PerfectPitchScreen()
         {
             InitializeComponent();
         }
@@ -118,7 +118,7 @@ namespace MusicTrainer
 
         void UpdateNotePlayer(string note)
         {
-            Program.notePlayer.URL = Program.getNoteFile(note);
+            Program.notePlayer.URL = Program.GetNoteFile(note);
         }
 
         private void AnswerAButton_Click(object sender, EventArgs e)

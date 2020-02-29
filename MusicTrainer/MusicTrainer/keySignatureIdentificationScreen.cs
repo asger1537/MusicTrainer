@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace MusicTrainer
 {
-    public partial class keySignatureIdentificationScreen : Form
+    public partial class KeySignatureIdentificationScreen : Form
     {
         string currentSignature;
         int numCorrect, numCorrectInCurrentLevel;
@@ -18,10 +18,12 @@ namespace MusicTrainer
         bool hasAnswered;
         int level;
         int signatureAnswer;
-        public keySignatureIdentificationScreen()
+
+        public KeySignatureIdentificationScreen()
         {
             InitializeComponent();
         }
+
         public void initializeSignatureIdentification()
         {
             hasAnswered = false;
@@ -52,7 +54,7 @@ namespace MusicTrainer
 
         void UpdateSignature(string signature)
         {
-            questionSignatureImage.Image = System.Drawing.Image.FromFile(Program.getSignatureFile(signature));
+            questionSignatureImage.Image = System.Drawing.Image.FromFile(Program.GetSignatureFile(signature));
         }
 
         void CheckAnswer(string answer)

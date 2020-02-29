@@ -1,6 +1,6 @@
 ﻿namespace MusicTrainer
 {
-    partial class keySignatureIdentificationScreen
+    partial class KeySignatureIdentificationScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -88,9 +88,10 @@
             // levelLabel
             // 
             this.levelLabel.AutoSize = true;
+            this.levelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.levelLabel.Location = new System.Drawing.Point(500, 77);
             this.levelLabel.Name = "levelLabel";
-            this.levelLabel.Size = new System.Drawing.Size(0, 13);
+            this.levelLabel.Size = new System.Drawing.Size(0, 29);
             this.levelLabel.TabIndex = 62;
             // 
             // ContinueButton
@@ -223,7 +224,7 @@
             this.questionSignatureImage.TabIndex = 74;
             this.questionSignatureImage.TabStop = false;
             // 
-            // keySignatureIdentificationScreen
+            // KeySignatureIdentificationScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -244,7 +245,7 @@
             this.Controls.Add(this.ContinueButton);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.button1);
-            this.Name = "keySignatureIdentificationScreen";
+            this.Name = "KeySignatureIdentificationScreen";
             this.Text = "keySignatureIdentificationScreen";
             ((System.ComponentModel.ISupportInitialize)(this.questionSignatureImage)).EndInit();
             this.ResumeLayout(false);

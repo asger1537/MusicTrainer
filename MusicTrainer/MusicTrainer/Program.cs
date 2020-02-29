@@ -18,75 +18,62 @@ namespace MusicTrainer
         /// The main entry point for the application.
         /// </summary>
 
-
-        public static loginScreen loginScreen;
+        public static LoginScreen loginScreen;
         public static SignUpScreen signUpScreen;
-        public static selectionScreen selectionScreen;
-        public static keySignatureIdentificationScreen keySignatureIdentificationScreen;
+        public static SelectionScreen selectionScreen;
+        public static KeySignatureIdentificationScreen keySignatureIdentificationScreen;
         public static KeySignatureConstructionScreen keySignatureConstructionScreen;
-        public static perfectPitchScreen perfectPitchScreen;
+        public static PerfectPitchScreen perfectPitchScreen;
         public static List<string> notes = new List<string>() { "C3", "D3", "E3", "F3", "G3", "A3", "B3" };
         public static List<string> signatures = new List<string>() { "F_Major", "C_Major", "G_Major", "D_Major", "A_Major", "E_Major", "B_Major" };
         public static WindowsMediaPlayer notePlayer;
-        public static Program program;
         public static int userId;
-        //public static Dictionary<string, WindowsMediaPlayer> notePlayers;
-        
-        
+        public static SQLiteConnection db;
 
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            initialize();
+            InitializeVariables();
+            ConnectToDB();
             Application.Run(loginScreen);
-
         }
         
-        static void initialize()
+        static void InitializeVariables()
         {
-            loginScreen = new loginScreen();
-            program = new Program();
+            loginScreen = new LoginScreen();
             signUpScreen = new SignUpScreen();
-            selectionScreen = new selectionScreen();
-            perfectPitchScreen = new perfectPitchScreen();
+            selectionScreen = new SelectionScreen();
+            perfectPitchScreen = new PerfectPitchScreen();
             keySignatureConstructionScreen = new KeySignatureConstructionScreen();
-            keySignatureIdentificationScreen = new keySignatureIdentificationScreen();
+            keySignatureIdentificationScreen = new KeySignatureIdentificationScreen();
             notePlayer = new WindowsMediaPlayer();
-            connectToDB();
         }
 
-        public static string getNoteFile(string note)
+        public static string GetNoteFile(string note)
         {
-            string noteSoundsPath = getMusicTrainerPath() + "\\MusicTrainer\\noteSounds\\";
+            string noteSoundsPath = GetMusicTrainerPath() + "\\MusicTrainer\\noteSounds\\";
             return noteSoundsPath + note + ".wav";
         }
 
-        public static string getSignatureFile(string signature)
+        public static string GetSignatureFile(string signature)
         {
-            string imagesPath = getMusicTrainerPath() + "\\MusicTrainer\\images\\";
+            string imagesPath = GetMusicTrainerPath() + "\\MusicTrainer\\images\\";
             return imagesPath + signature + ".png";
         }
 
-        static string getMusicTrainerPath()
+        static string GetMusicTrainerPath()
         {
             var fullBasePath = Directory.GetCurrentDirectory();
             var musicTrainerPath = fullBasePath.Substring(0, fullBasePath.IndexOf("MusicTrainer") + "MusicTrainer".Length);
             return musicTrainerPath;
         }
 
-        public static SQLiteConnection db;
-        static void connectToDB()
+        static void ConnectToDB()
         {
-            db = new SQLiteConnection(getMusicTrainerPath()+"\\MusicTrainer\\database\\users.db");
+            db = new SQLiteConnection(GetMusicTrainerPath()+"\\MusicTrainer\\database\\users.db");
             db.CreateTable<User>();
-        }
-
-        static public int AddUserToDB(User user)
-        {
-            int result = db.Insert(user);
-            return result;
         }
 
         [Table("Users")]
@@ -121,7 +108,5 @@ namespace MusicTrainer
 
             return salt;
         }
-
-
     }
 }

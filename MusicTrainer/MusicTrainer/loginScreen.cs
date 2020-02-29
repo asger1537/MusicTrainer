@@ -12,38 +12,19 @@ using SQLite;
 
 namespace MusicTrainer
 {
-    public partial class loginScreen : Form
+    public partial class LoginScreen : Form
     {
-        public loginScreen()
+        public LoginScreen()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private Program.User getUserByUsername(string username)
         {
             try
             {
-                return Program.db.Table<Program.User>().Where(user => user.Username.Equals(this.loginUsernameEntry.Text)).First();
+                return Program.db.Table<Program.User>().Where(user => user.Username.Equals(username)).First();
             }
             catch
             {

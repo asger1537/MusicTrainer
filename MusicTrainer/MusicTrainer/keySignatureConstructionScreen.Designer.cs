@@ -59,24 +59,24 @@
             this.ContinueButton.Visible = false;
             this.ContinueButton.Click += new System.EventHandler(this.ContinueButton_Click);
             // 
-            // BackButton
+            // backButton
             // 
             this.backButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backButton.Location = new System.Drawing.Point(9, 10);
             this.backButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.backButton.Name = "BackButton";
+            this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(131, 49);
             this.backButton.TabIndex = 37;
             this.backButton.Text = "Back";
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
-            // button1
+            // startButton
             // 
             this.startButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startButton.Location = new System.Drawing.Point(869, 138);
             this.startButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.startButton.Name = "button1";
+            this.startButton.Name = "startButton";
             this.startButton.Size = new System.Drawing.Size(131, 49);
             this.startButton.TabIndex = 36;
             this.startButton.Text = "Start";
@@ -163,9 +163,10 @@
             // levelLabel
             // 
             this.levelLabel.AutoSize = true;
+            this.levelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.levelLabel.Location = new System.Drawing.Point(500, 76);
             this.levelLabel.Name = "levelLabel";
-            this.levelLabel.Size = new System.Drawing.Size(0, 13);
+            this.levelLabel.Size = new System.Drawing.Size(0, 29);
             this.levelLabel.TabIndex = 46;
             // 
             // label2
@@ -206,7 +207,7 @@
             this.correctLabel.Size = new System.Drawing.Size(0, 25);
             this.correctLabel.TabIndex = 51;
             // 
-            // keySignatureConstructionScreen
+            // KeySignatureConstructionScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -226,7 +227,7 @@
             this.Controls.Add(this.ContinueButton);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.startButton);
-            this.Name = "keySignatureConstructionScreen";
+            this.Name = "KeySignatureConstructionScreen";
             this.Text = "keySignatureConstructionScreen";
             this.ResumeLayout(false);
             this.PerformLayout();

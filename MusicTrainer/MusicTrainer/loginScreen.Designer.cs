@@ -1,6 +1,6 @@
 ﻿namespace MusicTrainer
 {
-    partial class loginScreen
+    partial class LoginScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -48,7 +48,6 @@
             this.label1.Size = new System.Drawing.Size(80, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Username:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -69,7 +68,6 @@
             this.label3.Size = new System.Drawing.Size(406, 76);
             this.label3.TabIndex = 2;
             this.label3.Text = "Music Trainer";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // loginButton
             // 
@@ -118,7 +116,6 @@
             this.label4.Size = new System.Drawing.Size(138, 14);
             this.label4.TabIndex = 7;
             this.label4.Text = "Don\'t have an account?";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // loginErrorMessage
             // 

@@ -66,7 +66,7 @@
             this.signUpButton.TabIndex = 3;
             this.signUpButton.Text = "Sign up";
             this.signUpButton.UseVisualStyleBackColor = true;
-            this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
+            this.signUpButton.Click += new System.EventHandler(this.SignUpButton_Click);
             // 
             // label3
             // 
@@ -77,7 +77,6 @@
             this.label3.Size = new System.Drawing.Size(245, 41);
             this.label3.TabIndex = 10;
             this.label3.Text = "Create Account";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -116,7 +115,6 @@
             this.label4.Size = new System.Drawing.Size(46, 18);
             this.label4.TabIndex = 14;
             this.label4.Text = "Email:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // signUpErrorMessage
             // 

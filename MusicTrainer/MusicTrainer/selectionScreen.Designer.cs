@@ -1,6 +1,6 @@
 ﻿namespace MusicTrainer
 {
-    partial class selectionScreen
+    partial class SelectionScreen
     {
         /// <summary>
         /// Required designer variable.
