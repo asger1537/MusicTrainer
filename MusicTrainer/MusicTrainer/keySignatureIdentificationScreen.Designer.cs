@@ -33,16 +33,16 @@
             this.questionSignatureLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.levelLabel = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ContinueButton = new System.Windows.Forms.Button();
+            this.BackButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.C_MajorButton = new System.Windows.Forms.Button();
+            this.D_MajorButton = new System.Windows.Forms.Button();
+            this.E_MajorButton = new System.Windows.Forms.Button();
+            this.F_MajorButton = new System.Windows.Forms.Button();
+            this.G_MajorButton = new System.Windows.Forms.Button();
+            this.A_MajorButton = new System.Windows.Forms.Button();
+            this.B_MajorButton = new System.Windows.Forms.Button();
             this.questionSignatureImage = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.questionSignatureImage)).BeginInit();
             this.SuspendLayout();
@@ -51,202 +51,201 @@
             // 
             this.correctLabel.AutoSize = true;
             this.correctLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.correctLabel.Location = new System.Drawing.Point(579, 406);
-            this.correctLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.correctLabel.Location = new System.Drawing.Point(434, 330);
             this.correctLabel.Name = "correctLabel";
-            this.correctLabel.Size = new System.Drawing.Size(0, 29);
+            this.correctLabel.Size = new System.Drawing.Size(0, 25);
             this.correctLabel.TabIndex = 66;
             // 
             // correctFraction
             // 
             this.correctFraction.AutoSize = true;
             this.correctFraction.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.correctFraction.Location = new System.Drawing.Point(633, 37);
-            this.correctFraction.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.correctFraction.Location = new System.Drawing.Point(475, 30);
             this.correctFraction.Name = "correctFraction";
-            this.correctFraction.Size = new System.Drawing.Size(0, 35);
+            this.correctFraction.Size = new System.Drawing.Size(0, 29);
             this.correctFraction.TabIndex = 65;
             // 
             // questionSignatureLabel
             // 
             this.questionSignatureLabel.AutoSize = true;
             this.questionSignatureLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.questionSignatureLabel.Location = new System.Drawing.Point(701, 229);
-            this.questionSignatureLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.questionSignatureLabel.Location = new System.Drawing.Point(526, 186);
             this.questionSignatureLabel.Name = "questionSignatureLabel";
-            this.questionSignatureLabel.Size = new System.Drawing.Size(0, 39);
+            this.questionSignatureLabel.Size = new System.Drawing.Size(0, 31);
             this.questionSignatureLabel.TabIndex = 64;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.label2.Location = new System.Drawing.Point(473, 435);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(355, 353);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(530, 25);
+            this.label2.Size = new System.Drawing.Size(412, 20);
             this.label2.TabIndex = 63;
             this.label2.Text = "Press the signature corresponding to the image above";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // levelLabel
             // 
             this.levelLabel.AutoSize = true;
-            this.levelLabel.Location = new System.Drawing.Point(667, 95);
-            this.levelLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.levelLabel.Location = new System.Drawing.Point(500, 77);
             this.levelLabel.Name = "levelLabel";
-            this.levelLabel.Size = new System.Drawing.Size(0, 17);
+            this.levelLabel.Size = new System.Drawing.Size(0, 13);
             this.levelLabel.TabIndex = 62;
             // 
-            // button3
+            // ContinueButton
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(1159, 171);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(175, 60);
-            this.button3.TabIndex = 54;
-            this.button3.Text = "Continue";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Visible = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.ContinueButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ContinueButton.Location = new System.Drawing.Point(869, 139);
+            this.ContinueButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.ContinueButton.Name = "ContinueButton";
+            this.ContinueButton.Size = new System.Drawing.Size(131, 49);
+            this.ContinueButton.TabIndex = 54;
+            this.ContinueButton.Text = "Continue";
+            this.ContinueButton.UseVisualStyleBackColor = true;
+            this.ContinueButton.Visible = false;
+            this.ContinueButton.Click += new System.EventHandler(this.ContinueButton_Click);
             // 
-            // button2
+            // BackButton
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(12, 13);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(175, 60);
-            this.button2.TabIndex = 53;
-            this.button2.Text = "Back";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.BackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackButton.Location = new System.Drawing.Point(9, 11);
+            this.BackButton.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(131, 49);
+            this.BackButton.TabIndex = 53;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = true;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1159, 171);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Location = new System.Drawing.Point(869, 139);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 60);
+            this.button1.Size = new System.Drawing.Size(131, 49);
             this.button1.TabIndex = 52;
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button4
+            // C_MajorButton
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button4.Location = new System.Drawing.Point(472, 486);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(175, 60);
-            this.button4.TabIndex = 67;
-            this.button4.Text = "C_Major";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.C_MajorButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.C_MajorButton.Location = new System.Drawing.Point(354, 395);
+            this.C_MajorButton.Margin = new System.Windows.Forms.Padding(2);
+            this.C_MajorButton.Name = "C_MajorButton";
+            this.C_MajorButton.Size = new System.Drawing.Size(131, 49);
+            this.C_MajorButton.TabIndex = 67;
+            this.C_MajorButton.Text = "C_Major";
+            this.C_MajorButton.UseVisualStyleBackColor = true;
+            this.C_MajorButton.Click += new System.EventHandler(this.C_MajorButton_Click);
             // 
-            // button5
+            // D_MajorButton
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button5.Location = new System.Drawing.Point(653, 486);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(175, 60);
-            this.button5.TabIndex = 68;
-            this.button5.Text = "D_Major";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.D_MajorButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.D_MajorButton.Location = new System.Drawing.Point(490, 395);
+            this.D_MajorButton.Margin = new System.Windows.Forms.Padding(2);
+            this.D_MajorButton.Name = "D_MajorButton";
+            this.D_MajorButton.Size = new System.Drawing.Size(131, 49);
+            this.D_MajorButton.TabIndex = 68;
+            this.D_MajorButton.Text = "D_Major";
+            this.D_MajorButton.UseVisualStyleBackColor = true;
+            this.D_MajorButton.Click += new System.EventHandler(this.D_MajorButton_Click);
             // 
-            // button6
+            // E_MajorButton
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button6.Location = new System.Drawing.Point(834, 486);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(175, 60);
-            this.button6.TabIndex = 69;
-            this.button6.Text = "E_Major";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.E_MajorButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.E_MajorButton.Location = new System.Drawing.Point(626, 395);
+            this.E_MajorButton.Margin = new System.Windows.Forms.Padding(2);
+            this.E_MajorButton.Name = "E_MajorButton";
+            this.E_MajorButton.Size = new System.Drawing.Size(131, 49);
+            this.E_MajorButton.TabIndex = 69;
+            this.E_MajorButton.Text = "E_Major";
+            this.E_MajorButton.UseVisualStyleBackColor = true;
+            this.E_MajorButton.Click += new System.EventHandler(this.E_MajorButton_Click);
             // 
-            // button7
+            // F_MajorButton
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button7.Location = new System.Drawing.Point(383, 552);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(175, 60);
-            this.button7.TabIndex = 70;
-            this.button7.Text = "F_Major";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.F_MajorButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.F_MajorButton.Location = new System.Drawing.Point(287, 448);
+            this.F_MajorButton.Margin = new System.Windows.Forms.Padding(2);
+            this.F_MajorButton.Name = "F_MajorButton";
+            this.F_MajorButton.Size = new System.Drawing.Size(131, 49);
+            this.F_MajorButton.TabIndex = 70;
+            this.F_MajorButton.Text = "F_Major";
+            this.F_MajorButton.UseVisualStyleBackColor = true;
+            this.F_MajorButton.Click += new System.EventHandler(this.F_MajorButton_Click);
             // 
-            // button8
+            // G_MajorButton
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button8.Location = new System.Drawing.Point(564, 552);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(175, 60);
-            this.button8.TabIndex = 71;
-            this.button8.Text = "G_Major";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.G_MajorButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.G_MajorButton.Location = new System.Drawing.Point(423, 448);
+            this.G_MajorButton.Margin = new System.Windows.Forms.Padding(2);
+            this.G_MajorButton.Name = "G_MajorButton";
+            this.G_MajorButton.Size = new System.Drawing.Size(131, 49);
+            this.G_MajorButton.TabIndex = 71;
+            this.G_MajorButton.Text = "G_Major";
+            this.G_MajorButton.UseVisualStyleBackColor = true;
+            this.G_MajorButton.Click += new System.EventHandler(this.G_MajorButton_Click);
             // 
-            // button9
+            // A_MajorButton
             // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button9.Location = new System.Drawing.Point(745, 552);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(175, 60);
-            this.button9.TabIndex = 72;
-            this.button9.Text = "A_Major";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.A_MajorButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.A_MajorButton.Location = new System.Drawing.Point(559, 448);
+            this.A_MajorButton.Margin = new System.Windows.Forms.Padding(2);
+            this.A_MajorButton.Name = "A_MajorButton";
+            this.A_MajorButton.Size = new System.Drawing.Size(131, 49);
+            this.A_MajorButton.TabIndex = 72;
+            this.A_MajorButton.Text = "A_Major";
+            this.A_MajorButton.UseVisualStyleBackColor = true;
+            this.A_MajorButton.Click += new System.EventHandler(this.A_MajorButton_Click);
             // 
-            // button10
+            // B_MajorButton
             // 
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button10.Location = new System.Drawing.Point(926, 552);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(175, 60);
-            this.button10.TabIndex = 73;
-            this.button10.Text = "B_Major";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.B_MajorButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.B_MajorButton.Location = new System.Drawing.Point(694, 448);
+            this.B_MajorButton.Margin = new System.Windows.Forms.Padding(2);
+            this.B_MajorButton.Name = "B_MajorButton";
+            this.B_MajorButton.Size = new System.Drawing.Size(131, 49);
+            this.B_MajorButton.TabIndex = 73;
+            this.B_MajorButton.Text = "B_Major";
+            this.B_MajorButton.UseVisualStyleBackColor = true;
+            this.B_MajorButton.Click += new System.EventHandler(this.B_MajorButton_Click);
             // 
             // questionSignatureImage
             // 
-            this.questionSignatureImage.Location = new System.Drawing.Point(604, 271);
+            this.questionSignatureImage.Location = new System.Drawing.Point(453, 220);
+            this.questionSignatureImage.Margin = new System.Windows.Forms.Padding(2);
             this.questionSignatureImage.Name = "questionSignatureImage";
-            this.questionSignatureImage.Size = new System.Drawing.Size(259, 103);
+            this.questionSignatureImage.Size = new System.Drawing.Size(194, 84);
             this.questionSignatureImage.TabIndex = 74;
             this.questionSignatureImage.TabStop = false;
-            this.questionSignatureImage.Click += new System.EventHandler(this.questionSignatureImage_Click);
             // 
             // keySignatureIdentificationScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1580, 937);
+            this.ClientSize = new System.Drawing.Size(1185, 761);
             this.Controls.Add(this.questionSignatureImage);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.B_MajorButton);
+            this.Controls.Add(this.A_MajorButton);
+            this.Controls.Add(this.G_MajorButton);
+            this.Controls.Add(this.F_MajorButton);
+            this.Controls.Add(this.E_MajorButton);
+            this.Controls.Add(this.D_MajorButton);
+            this.Controls.Add(this.C_MajorButton);
             this.Controls.Add(this.correctLabel);
             this.Controls.Add(this.correctFraction);
             this.Controls.Add(this.questionSignatureLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.levelLabel);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.ContinueButton);
+            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "keySignatureIdentificationScreen";
             this.Text = "keySignatureIdentificationScreen";
-            this.Load += new System.EventHandler(this.keySignatureIdentificationScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.questionSignatureImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -260,16 +259,16 @@
         private System.Windows.Forms.Label questionSignatureLabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label levelLabel;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ContinueButton;
+        private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button C_MajorButton;
+        private System.Windows.Forms.Button D_MajorButton;
+        private System.Windows.Forms.Button E_MajorButton;
+        private System.Windows.Forms.Button F_MajorButton;
+        private System.Windows.Forms.Button G_MajorButton;
+        private System.Windows.Forms.Button A_MajorButton;
+        private System.Windows.Forms.Button B_MajorButton;
         private System.Windows.Forms.PictureBox questionSignatureImage;
     }
 }

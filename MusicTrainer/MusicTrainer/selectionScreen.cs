@@ -100,7 +100,7 @@ namespace MusicTrainer
         {
             this.Hide();
             Program.keySignatureConstructionScreen.Show();
-            Program.keySignatureConstructionScreen.initializeKeySignatureConstruction();
+            Program.keySignatureConstructionScreen.InitializeKeySignatureConstruction();
         }
     }
 }
